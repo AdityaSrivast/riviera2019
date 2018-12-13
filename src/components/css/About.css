@@ -1,0 +1,27 @@
+.tac{
+    text-align: center;
+}
+.spon-heading{
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #272C2E;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    /* font-weight: 500 !important;  give font weight to direct h1*/
+}
+.about-content{
+    text-align: center;
+    color: #272C2E;
+    letter-spacing: 1px;
+    line-height: 1.6rem;
+}
+.about-us-wrapper{
+    height: 100%;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -19,9 +19,21 @@ body{
     height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
+}
+.riviera-logo{
     text-align: center;
 }
 #head-logo{
     width: 200px;
     margin-top: 70px;
+}
+
+.menu-icon{
+    position: fixed !important;
+    top: 0;
+    z-index: 100;
+}
+.about-us-section{
+    background: rgb(99,95,95);
+    background: linear-gradient(90deg, rgba(99,95,95,1) 8%, rgba(122,106,106,1) 30%, rgba(208,223,227,1) 62%);
 }

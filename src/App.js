@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
-import Main from './components';
+import Main from './components/Landing';
 import Events from './components/Events';
 
 import './styles/base.css';
