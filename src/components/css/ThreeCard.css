@@ -1,0 +1,45 @@
+.eps-wrapper{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 50px;
+}
+
+.c-card{
+    height: 390px;
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    color: white;
+    text-align: center;
+    padding: 15px;
+} 
+@media only screen and (max-width: 600px) {
+    .c-card{
+        /* height: ; */
+    }
+}
+.card-1{
+    background-image: url('./../../images/events.png');
+}
+.card-2{
+    background-image: url('./../../images/proshows.png');
+}
+.card-3{
+    background-image: url('./../../images/sports.png');
+}
+
+.eps-btn{
+    background: white;
+    color: #272C2E;
+    position: absolute;
+    bottom: 40px;
+    border: none;
+    padding: 13px 22px; 
+    cursor: pointer;
+    font-size: 16px;
+    left:30%;
+}

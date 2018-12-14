@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Grid from '@material-ui/core/Grid';
 
+import AboutUsImg from './../../images/about.png'
 import './../css/About.css';
 
 class About extends Component {
@@ -10,7 +11,7 @@ class About extends Component {
 				<div className="tac">
 					<Grid container spacing={24}>
 						<Grid item xs={12} sm={6}>
-							<div>lorem ipsum abc dkjd fkdnol ondoinfpd noidnf</div>
+							<img src={AboutUsImg} alt="About us" className="about-img" />
 						</Grid>
 						<Grid item xs={12} sm={6}>
 							<div className="about-content">

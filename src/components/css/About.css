@@ -1,6 +1,4 @@
-.tac{
-    text-align: center;
-}
+
 .spon-heading{
     text-align: center;
     padding-top: 10px;
@@ -24,4 +22,18 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.about-img{
+    width: 500px;
+    height: auto;
+    position: absolute;
+    bottom: 0;
+    left: 100px;
+}
+
+@media only screen and (max-width: 959px){
+    .about-img{
+        display: none;
+    }
 }

@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import ReactFullpage from '@fullpage/react-fullpage';
-import { Link } from 'react-router-dom';
 import { withStyles } from '@material-ui/core/styles';
 import Drawer from '@material-ui/core/Drawer';
 import List from '@material-ui/core/List';
@@ -72,7 +71,7 @@ class Fullpage extends Component {
 								<div className="section">
 									<Sponsors />
 								</div>
-								<div className="section">
+								<div className="section footer-section">
 									<Footer />
 								</div>
 							</ReactFullpage.Wrapper>

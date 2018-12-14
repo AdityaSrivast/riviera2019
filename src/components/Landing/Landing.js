@@ -8,7 +8,7 @@ class Landing extends Component {
 			<div>
 				<div className="back-img">
                     <div className="riviera-logo">
-                        {/* <img src={Logo} alt="Logo" id="head-logo" /> */}
+                        <img src={Logo} alt="Logo" id="head-logo" />
                     </div>
 				</div>
 			</div>

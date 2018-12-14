@@ -7,9 +7,6 @@
     letter-spacing: 1px;
     /* font-weight: 500 !important;  give font weight to direct h1*/
 }
-.tac{
-    text-align: center;
-}
 
 .pepsi-logo{
     height: auto;
@@ -19,13 +16,6 @@
     .pepsi-logo{
         width: 90px;
     }
-}
-.c-btn{
-    border: none;
-    background-color: transparent;
-    padding: 14px ;
-    cursor: pointer;
-    font-size: 15px;
 }
 .spon-btn{
     background-color: #272C2E;

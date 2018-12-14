@@ -1,0 +1,29 @@
+.footer-ul{
+    list-style-type: none;
+}
+.footer-wrapper{
+    letter-spacing: 1px;
+    color:#272C2E;
+    padding-top: 50px;
+}
+
+.footer-ul li{
+    padding-top: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+#footer-contact{
+    margin-top: 2rem;
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+.footer-head{
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-left: 15px;
+}
+
+.footer-logo{
+    width: 200px;
+    height: auto;
+}
