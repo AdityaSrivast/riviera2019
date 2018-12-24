@@ -10,10 +10,10 @@ class About extends Component {
 			<div className="about-us-wrapper">
 				<div className="tac">
 					<Grid container spacing={24}>
-						<Grid item xs={12} sm={6}>
+						<Grid item lg={6} md={6}>
 							<img src={AboutUsImg} alt="About us" className="about-img" />
 						</Grid>
-						<Grid item xs={12} sm={6}>
+						<Grid item lg={6} md={6} sm={12} xs={12}>
 							<div className="about-content">
 								<div>
 									<div className="spon-heading">

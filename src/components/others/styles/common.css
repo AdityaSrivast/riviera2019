@@ -1,0 +1,45 @@
+html {
+    padding: 0;
+    margin: 0;
+}
+.header {
+    /* background-image: url('./images/events.jpg'); */
+    /* background-size: cover; */
+    /* background-repeat: no-repeat; */
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-position-x: initial, 50%;
+    background-position-y: initial, center;
+    background-size: initial, cover;
+    /* background-repeat-x: initial, initial; */
+    /* background-repeat-y: initial, initial; */
+    background-attachment: initial, initial;
+    background-origin: initial, initial;
+    background-clip: initial, initial;
+    background-color: initial;
+    margin-bottom: 1rem;
+}
+.header>h2 {
+    color: #fff;
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+}
+/* events */
+.events {
+    width: 80%;
+    margin: 0 auto;
+}
+.category-select {
+    width: 6em;
+    /* width: fit-content; */
+    /* width: -webkit-fill-available; */
+}
+
+@media only screen and (max-width: 500px) {
+    html,body {
+        font-size: 14px;
+    }
+}

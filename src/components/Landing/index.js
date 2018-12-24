@@ -38,7 +38,7 @@ class Fullpage extends Component {
 		const sideList = (
 			<div className={classes.list}>
 				<List>
-					{['Inbox', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
+					{['HOME', 'EVENTS', 'SPORTS', 'PROSHOWS', 'TEAM RIVIERA', 'SPONSORS & PARTNERS', 'CONTACT'].map((text, index) => (
 						<ListItem button key={text}>
 							<ListItemText primary={text} />
 						</ListItem>
