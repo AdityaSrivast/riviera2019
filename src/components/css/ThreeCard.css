@@ -6,7 +6,7 @@
 }
 
 .c-card{
-    height: 390px;
+    min-height: 390px;
     width: 90%;
     margin-right: auto;
     margin-left: auto;
@@ -23,6 +23,9 @@
     justify-content: space-between;
     height: 70%;
 }
+.show-sm {
+    display: none;
+}
 @media only screen and (max-width: 959px) {
     .c-card {
         height: 300px;
@@ -33,6 +36,12 @@
     }
     .eps-wrapper {
         width: 90%;
+    }
+    .hide-sm {
+        display: none !important;
+    }
+    .show-sm {
+        display: block;
     }
 }
 @media only screen and (max-width: 600px) {

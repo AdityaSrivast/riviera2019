@@ -4,7 +4,7 @@ import events from './images/events.jpg';
 
 const Proshows = () => {
     return(
-        <Header title="PROSHOWS RIVIERA '19" image={events}/>
+        <Header title="PROSHOWS" image={events}/>
     );
 }
 
