@@ -14,6 +14,8 @@ import Footer from './Footer';
 import About from './About';
 import ThreeCards from './ThreeCards';
 
+import ComingSoon from "./comingSoon";
+
 const styles = {
 	list: {
 		width: 250,
@@ -53,7 +55,8 @@ class Fullpage extends Component {
 		);
 		return (
 			<div>
-				<Menu />
+                <ComingSoon />
+				{/* <Menu />
 				<ReactFullpage
 					verticalCentered={false}
 					render={({ state, fullpageApi }) => {
@@ -87,7 +90,7 @@ class Fullpage extends Component {
 					>
 						{sideList}
 					</div>
-				</Drawer>
+				</Drawer> */}
 			</div>
 		);
 	}
