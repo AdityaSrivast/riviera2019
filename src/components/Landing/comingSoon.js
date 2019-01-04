@@ -37,7 +37,7 @@ class ComingSoon extends Component {
         this.setState({ countdown });
     }
     componentDidMount() {
-        let target_date = new Date().getTime() + (1000 * 3600 * 48); // set the countdown date
+        let target_date = new Date().getTime() + (3520776156); // set the countdown date
         this.setState ({ target_date });
         this.getCountdown();
         setInterval( () => { this.getCountdown(); }, 1000);
@@ -55,9 +55,15 @@ class ComingSoon extends Component {
                         {/* <h1 class="glitch" data-text="Coming_Soon">Coming_Soon</h1> */}
                         <br />
                         <div className="social-icons">
-                            <i class="fa fa-facebook fa-3x" aria-hidden="true"></i>
-                            <i class="fa fa-instagram fa-3x" aria-hidden="true"></i>
-                            <i class="fa fa-twitter fa-3x" aria-hidden="true"></i>
+                            <a href="https://www.facebook.com/rivieraVITUniversity/">
+                                <i class="fa fa-facebook fa-2x" aria-hidden="true"></i>
+                            </a>
+                            <a href="https://www.instagram.com/rivieravituniversity/">
+                                <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
+                            </a>
+                            <a href="https://www.youtube.com/channel/UCdqk7wzTloAVBY_j4p4weAg">
+                                <i class="fa fa-youtube fa-2x" aria-hidden="true"></i>
+                            </a>
                         </div>
                         <br />
                         <div className="countdown">

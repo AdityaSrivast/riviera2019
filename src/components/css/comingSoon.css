@@ -46,10 +46,22 @@
 .social-icons{
     position: absolute;
     bottom : 10px;
-    left: 20px;
+    right: 20px;
     width: 200px;
     display: flex;
     justify-content: space-between;
+}
+.social-icons a{
+    color: white;
+}
+.fa-facebook {
+    color: #3b5998;
+}
+.fa-instagram{
+    color:  #3f729b;
+}
+.fa-youtube{
+    color: #ff0000;
 }
 .glitch {
     color: white;
