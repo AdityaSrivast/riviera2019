@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/riviera2019/precache-manifest.bc9ed3d405cbd111ef12e10665869910.js"
+  "/riviera2019/precache-manifest.7b5330d0b38eaf5e940e3f29a318f137.js"
 );
 
 workbox.clientsClaim();
