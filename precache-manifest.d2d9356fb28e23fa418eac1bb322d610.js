@@ -44,24 +44,24 @@ self.__precacheManifest = [
     "url": "/riviera2019/static/js/main.06f3ce6f.chunk.js"
   },
   {
-    "revision": "18ed58dcbe62ea56b6e6acf99dfef8dc",
-    "url": "/riviera2019/static/media/sports.18ed58dc.png"
+    "revision": "b532beab8ca887878674ee6c01326fab",
+    "url": "/riviera2019/static/media/events.b532beab.png"
   },
   {
     "revision": "31161734b5f0ae7a9dd9a0e08b20b513",
     "url": "/riviera2019/static/media/proshows.31161734.png"
   },
   {
-    "revision": "b532beab8ca887878674ee6c01326fab",
-    "url": "/riviera2019/static/media/events.b532beab.png"
-  },
-  {
-    "revision": "ced611daf7709cc778da928fec876475",
-    "url": "/riviera2019/static/media/slick.ced611da.eot"
+    "revision": "18ed58dcbe62ea56b6e6acf99dfef8dc",
+    "url": "/riviera2019/static/media/sports.18ed58dc.png"
   },
   {
     "revision": "b7c9e1e479de3b53f1e4e30ebac2403a",
     "url": "/riviera2019/static/media/slick.b7c9e1e4.woff"
+  },
+  {
+    "revision": "ced611daf7709cc778da928fec876475",
+    "url": "/riviera2019/static/media/slick.ced611da.eot"
   },
   {
     "revision": "d41f55a78e6f49a5512878df1737e58a",
