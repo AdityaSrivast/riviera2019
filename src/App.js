@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom';
 
 import Main from './components/Landing';
 import Events from './components/others/Events';
@@ -16,9 +16,10 @@ class App extends Component {
 	render() {
     	return (
       		<div className="App" >
-        		<BrowserRouter>
+        		<BrowserRouter basename={process.env.PUBLIC_URL}>
 					<Switch>
 						<Route exact path="/" component={Main} />
+						<Route exact path="/home" render={() => <Redirect to="/"/>} />
 						<Route exact path="/events" component={Events} />
 						<Route exact path="/sports" component={Sports}/>
 						<Route exact path="/proshows" component={Proshows}/>

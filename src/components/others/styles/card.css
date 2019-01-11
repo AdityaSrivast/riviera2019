@@ -1,0 +1,48 @@
+.card-wrapper {
+    /* background: transparent; */
+    background: url('../../../images/red-dots.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 4em;
+    cursor: pointer;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 800ms;
+    /* background-position: center; */
+}
+.card-wrapper:hover {
+    background-position: center;
+    /* width: 95%; */
+}
+.card-container {
+    background-color: #801B1B;
+    /* background-color: red; */
+    color: #fff;
+    padding: .5rem 1.5rem 2rem 2rem;
+    opacity: .7;
+}
+.card-container:hover {
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 300ms;
+    /* padding: .7rem 1.7rem 2.2rem 2.2rem; */
+    /* height: ; */
+    /* padding: .7rem 1.5rem 2.2rem 2rem; */
+    opacity: .8;
+}
+.card-content {
+    height: 200px;
+    text-overflow:ellipsis;
+    overflow: hidden;
+    display: inline-block;
+    /* white-space:nowrap */
+}
+.card-eventname {
+    font-weight: bold;
+}
+.card-contact {
+    margin-top: 2rem;
+}
+@media only screen and (max-width: 500px) {
+    .card-wrapper {
+        width: 100%;
+    }
+}

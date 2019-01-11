@@ -1,0 +1,50 @@
+.events-section {
+    background-color: #1D1D1D;
+}
+.event-select-container {
+    width: 100%;
+    display: flex;
+    /* justify-self: center; */
+    justify-content: center;
+}
+.event-select {
+    /* text-align: center; */
+    /* margin: 0 auto; */
+    padding: 10px;
+    background: #333;
+    border: 1px solid #444;
+    color: #fff;
+    outline: none;
+    width: 30%;
+    font-family: 'Quicksand';
+}
+.event-select option {
+    outline: none;
+    border: 1px solid #444;
+    background: #444;
+    padding: 10px;
+}
+.event-select option:checked {
+    /* background: #888; */
+    box-shadow: 0 0 10px 100px #818181 inset;
+}
+.events-search-box{
+    background:#333;
+    border:0px;
+    padding:10px;
+    /* color:#fff; */
+    color: #eee;
+    outline: none;
+    border: 1px solid #444;
+    font-family: 'Quicksand';
+}
+.MuiListItem-root-235{
+    padding-top: 7px !important;
+    padding-bottom: 7px !important;
+}
+.MuiMenuItem-root-331{
+    height: 0px !important;
+}
+.events-cards {
+    /* margin-top: 2rem; */
+}

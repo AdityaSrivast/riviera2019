@@ -1,10 +1,16 @@
 import React from 'react';
+
+
+import Menu from './../Menu';
 import Header from './common/header';
-import events from './images/events.jpg';
+import events from './../../images/event-main.jpg';
 
 const Proshows = () => {
     return(
-        <Header title="PROSHOWS" image={events}/>
+        <div>
+            <Menu />
+            <Header title="PROSHOWS" image={events}/>
+        </div>
     );
 }
 

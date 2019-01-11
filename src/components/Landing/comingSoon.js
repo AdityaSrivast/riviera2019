@@ -37,7 +37,7 @@ class ComingSoon extends Component {
         this.setState({ countdown });
     }
     componentDidMount() {
-        let target_date = new Date().getTime() + (3520776156); // set the countdown date
+        let target_date = new Date('14 Feb 2019').getTime(); // set the countdown date
         this.setState ({ target_date });
         this.getCountdown();
         setInterval( () => { this.getCountdown(); }, 1000);
