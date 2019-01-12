@@ -1,11 +1,8 @@
 import React, { Component } from 'react';
 import renderHTML from 'react-render-html';
-import ReactFullpage from '@fullpage/react-fullpage';
-
 
 import Logo from './../../images/rivieralogowhiteShadow.svg';
 import LandingText from '../..//images/landingText.svg';
-import { runInThisContext } from 'vm';
 
 
 class Landing extends Component {
@@ -51,7 +48,7 @@ class Landing extends Component {
             <div>
                 <div className="back-img">
                     <div className="nav-buttons-wrapper">
-                        <a href="https://vtop11.vit.ac.in/riviera/" target="_blank">
+                        <a href="https://vtop11.vit.ac.in/riviera/" target="_blank" rel="noopener noreferrer">
                             <button className="nav-button">Register</button>
                         </a>
                         <button onClick={()=> this.props.fullpageApi.moveTo(5, 0)} className="nav-button">Contact Us</button>
@@ -59,8 +56,8 @@ class Landing extends Component {
                     <div className="riviera-logo">
                         <img src={Logo} alt="Logo" id="head-logo" className="main-riviera-logo" />
                         <img src={LandingText} alt="tagline" className="tagline-logo" />
+                        <span className="landing-date">14-17th FEBRUARY</span>
                     </div>
-                    {/* <img src={LandingText} alt="tagline" id="head-logo" /> */}
                     <div>
                         <div className="countdown">
                             <div className="coming-in">Coming In</div>

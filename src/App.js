@@ -9,6 +9,8 @@ import Team from './components/others/team';
 import Sponsors from './components/others/sponsors';
 import Contact from './components/others/contact';
 
+import ComingSoon from './components/others/common/ComingSoon';
+
 import './styles/base.css';
 import './styles/events.css';
 
@@ -22,10 +24,10 @@ class App extends Component {
 						<Route exact path="/home" render={() => <Redirect to="/"/>} />
 						<Route exact path="/events" component={Events} />
 						<Route exact path="/sports" component={Sports}/>
-						<Route exact path="/proshows" component={Proshows}/>
-						<Route exact path="/team" component={Team}/>
-						<Route exact path="/sponsors" component={Sponsors}/>
-						<Route exact path="/contact" component={Contact}/>
+						<Route exact path="/proshows" component={ComingSoon}/>
+						<Route exact path="/team" component={ComingSoon}/>
+						<Route exact path="/sponsors" component={ComingSoon}/>
+						<Route exact path="/contact" component={ComingSoon}/>
 					</Switch>
 				</BrowserRouter>
       		</div>

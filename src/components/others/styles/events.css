@@ -1,5 +1,7 @@
 .events-section {
-    background-color: #1D1D1D;
+    background: url('./../../../images/page2.png');
+    background-color: #1d1d1d;
+    background-size: contain;
 }
 .event-select-container {
     width: 100%;
@@ -15,7 +17,6 @@
     border: 1px solid #444;
     color: #fff;
     outline: none;
-    width: 30%;
     font-family: 'Quicksand';
 }
 .event-select option {
@@ -45,6 +46,14 @@
 .MuiMenuItem-root-331{
     height: 0px !important;
 }
-.events-cards {
-    /* margin-top: 2rem; */
+@media only screen and (max-width: 600px)
+{
+    .event-main-grid{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .event-grid{
+        margin-bottom: 20px;
+    }
 }

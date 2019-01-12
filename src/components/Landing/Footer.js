@@ -57,17 +57,17 @@ class Footer extends Component {
                         <img src={Dancing} alt="Riviera" className="hide-sm" />
                         <p className="footer-head heading">FOLLOW US</p>
                         <ul className="footer-social-ul">
-                            <li><a href="https://www.facebook.com/rivieraVITUniversity/" target="_blank">
+                            <li><a href="https://www.facebook.com/rivieraVITUniversity/" target="_blank" rel="noopener noreferrer">
                                 <img src={Facebook} alt="facebook"></img></a>
                             </li>
-                            <li><a href="https://www.instagram.com/rivieravituniversity/" target="_blank">
+                            <li><a href="https://www.instagram.com/rivieravituniversity/" target="_blank" rel="noopener noreferrer">
                                 <img src={Instagram} alt="instagram"></img></a>
                             </li>
-                            <li><a href="https://www.instagram.com/rivieravituniversity/" target="_blank">
+                            <li><a href="https://www.instagram.com/rivieravituniversity/" target="_blank" rel="noopener noreferrer">
                                 <img src={Twitter} alt="twitter"></img></a>
                             </li>
-                            <li><a href="https://www.youtube.com/channel/UCdqk7wzTloAVBY_j4p4weAg" target="_blank">
-                                <img src={YouTube} alt="youtube"></img></a>
+                            <li><a href="https://www.youtube.com/channel/UCdqk7wzTloAVBY_j4p4weAg" target="_blank" rel="noopener noreferrer">
+                                <img src={YouTube} alt="youtube" className="last-icon-footer"></img></a>
                             </li>
                         </ul>
                     </Grid>

@@ -24,9 +24,9 @@ class Fullpage extends Component {
         }
     }
     toggleDrawer = (side, open) => () => {
-        // this.setState({
-        //     left: open,
-        // });
+        this.setState({
+            left: open,
+        });
     };
     render() {
         const { classes } = this.props;

@@ -46,3 +46,15 @@
         width: 100%;
     }
 }
+
+.sport-card{
+    height: 170px;
+    width: 80%;
+}
+.card-sportname{
+    font-size: 1.2rem;
+    font-weight: 510;
+}
+.sport-wrapper{
+    width: 100%;
+}

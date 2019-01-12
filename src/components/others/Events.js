@@ -11,7 +11,7 @@ import Card from './common/card';
 
 // others
 import urls from '../urls';
-import events from './../../images/event-main.jpg';
+import EventImg from './../../images/event-main.jpg';
 import './styles/events.css';
 
 const BASE_URL = urls.API_URL;
@@ -23,7 +23,8 @@ class Events extends Component {
             category: '',
             query: '',
             loading: true,
-            events: []
+            events: [],
+            categories : ['premium', 'pre-riviera', 'drama-art-and-photography', 'music', 'dance', 'workshop', 'quiz', 'words-worth-english', 'words-worth-tamil', 'words-worth-hindi', 'words-worth-telugu', 'adventure-sports', 'cyber-engage', 'informal']
         }
         this.getEvents();
     }
@@ -39,81 +40,61 @@ class Events extends Component {
     }
 
     getEvents = () => {
-        axios.get(`${BASE_URL}/all`).then(resp=> {
-            // console.log(resp);
-            let {info} = resp.data;
-            this.setState({events: info, loading: false});
-            // console.log(info);
-        }).catch(err=> {
-            this.setState({loading: false});
+        axios.get(`${BASE_URL}/all`).then(resp => {
+            let { info } = resp.data;
+            this.setState({ events: info,allEvents: info, loading: false });
+        }).catch(err => {
+            this.setState({ loading: false });
             console.log(err);
         })
     }
 
     search = (value) => {
-        this.setState({query: value});
-        let input, filter, ul, p, a, i, txtValue;
-        input = this.state.query;
-        // input = document.getElementById("myInput");
-        filter = input.toUpperCase();
-        ul = document.getElementById('events-cards');
-        // p = ul.getElementsByTagName("p.ca");
-        p= ul.getElementsByClassName("card-wrapper");
-        for (i = 0; i < p.length; i++) {
-            // console.log(p[i]);
-            // // a = p[i][1];
-            // a = p[i].getElementsByTagName("a")[0];
-            a= ul.getElementsByClassName("card-eventname")[0];
-            // console.log(a);
-            txtValue = a.textContent || a.innerText;
-            if (txtValue.toUpperCase().indexOf(filter) > -1) {
-                p[i].style.display = "";
-            } else {
-                p[i].style.display = "none";
-            }
-        }
+        let updatedList = this.state.allEvents;
+        console.log(value);
+        updatedList = updatedList.filter((item) => {
+            return item.name.toLowerCase().search(
+                value.toLowerCase()) !== -1;
+        });
+        console.log(updatedList);
+        this.setState({ events: updatedList });
+    }
+    filterCategory = (e) => {
+        axios.get(`${BASE_URL}/all?category=${e.target.value}`).then(resp => {
+            console.log(resp);
+            this.setState({ events : resp.data.info });
+        }).catch(err => {
+            console.log(err);
+        })
     }
 
     render() {
-        let {events, loading} = this.state;
-        let cards=[];
-        for(let i=0;i<events.length;i++) {
-            let event = events[i];
-            let {club,name, description,coordinator1,coordinator2,phone1,phone2}=event;
-            cards.push(
-                <Grid item md={6} sm={12}>
-                    <Card club={club} event={name} description={description} coordinator1={coordinator1} 
-                    coordinator2={coordinator2} phone1={phone1} phone2={phone2} />
-                </Grid>
-            )
-        }
+        console.log(this.state.events);
+        let { events, loading } = this.state;
         return (
             <div className="events-section">
                 <Menu />
-                <Header title="EVENTS RIVIERA '19" image={events} />
+                <Header title="EVENTS RIVIERA '19" image={EventImg} />
                 <div className="events">
-                    <Grid container>
-                        <Grid item md={6} xs={6}>
+                    <br />
+                    <Grid container className="event-main-grid">
+                        <Grid item md={6} xs={12} className="event-grid" style={{ marginBottom: '20px' }}>
                             <div className="event-select-container">
-                                <select className="event-select">
-                                    <option>
-                                        One
-                                    </option><option>
-                                        One
-                                    </option><option>
-                                        One
-                                    </option>
+                                <select className="event-select" onChange={this.filterCategory}>
+                                    {
+                                        this.state.categories.map((category,i) => 
+                                            <option key={i}>{category}</option>
+                                        )
+                                    }
                                 </select>
                             </div>
                         </Grid>
-                        <Grid item md={6} xs={6}>
+                        <Grid item md={6} xs={12} className="event-grid">
                             <div className='search-container' style={{ display: 'flex', justifyContent: 'center', width: '100%' }}>
                                 <input
                                     type='text'
                                     spellCheck="false"
-                                    // value={this.state.query}
-                                    // onChange={(e) => this.updateQuery(e.target.value)}
-                                    onChange={(e)=> this.search(e.target.value)}
+                                    onChange={(e) => this.search(e.target.value)}
                                     style={{
 
                                     }}
@@ -124,13 +105,24 @@ class Events extends Component {
                             </div>
                         </Grid>
                     </Grid>
-                    {loading ? 
-                    <CircularProgress size={30} className="color-theme-red"></CircularProgress>:
-                    <Grid container id="events-cards" className="events-cards">
-                        {cards}
-                    </Grid>}
+                    {loading ?
+                        <CircularProgress size={30} className="color-theme-red"></CircularProgress>
+                        :
+                        <Grid container id="events-cards" className="events-cards">
+
+                            {
+                                events.map((event, i) =>
+                                    <Grid item md={6} sm={12} key={i}>
+                                        <Card club={event.club} event={event.name} description={event.description} coordinator1={event.coordinator1}
+                                            coordinator2={event.coordinator2} phone1={event.phone1} phone2={event.phone2} />
+                                    </Grid>
+                                )
+                            }
+
+                        </Grid>
+                    }
                 </div>
-                <br/><br/>
+                <br /><br />
             </div>
         );
     }

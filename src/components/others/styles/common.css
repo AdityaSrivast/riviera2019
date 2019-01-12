@@ -3,9 +3,6 @@ html {
     margin: 0;
 }
 .header {
-    /* background-image: url('./images/events.jpg'); */
-    /* background-size: cover; */
-    /* background-repeat: no-repeat; */
     height: 350px;
     display: flex;
     align-items: center;
@@ -13,8 +10,6 @@ html {
     background-position-x: initial, 50%;
     background-position-y: initial, center;
     background-size: initial, cover;
-    /* background-repeat-x: initial, initial; */
-    /* background-repeat-y: initial, initial; */
     background-attachment: initial, initial;
     background-origin: initial, initial;
     background-clip: initial, initial;
@@ -34,8 +29,6 @@ html {
 }
 .category-select {
     width: 6em;
-    /* width: fit-content; */
-    /* width: -webkit-fill-available; */
 }
 
 @media only screen and (max-width: 500px) {
@@ -43,3 +36,5 @@ html {
         font-size: 14px;
     }
 }
+
+

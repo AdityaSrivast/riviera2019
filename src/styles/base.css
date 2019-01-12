@@ -53,7 +53,7 @@ html {
 }
 /* general */
 .color-theme-red {
-    color: #801B1B;
+    color: #801B1B !important;
 }
 .heading {
     font-family: 'Lato';
@@ -157,7 +157,7 @@ html {
 .footer-section{
     /* background: rgb(99,95,95);
     background: linear-gradient(90deg, rgba(99,95,95,1) 8%, rgba(122,106,106,1) 30%, rgba(208,223,227,1) 62%); */
-    background: #333;
+    background: #1d1d1d;
 }
 .tac{
     text-align: center;
@@ -230,17 +230,14 @@ html {
         padding: .3em 1.3em;
         width: unset;
     }
+    .landing-date{
+        left: 50px;
+    }
 }
-
-/*Select field in event page*/
-/* .category-select{
-    width: 9rem;
-} */
 .contact-form {
     width: 80%;
 }
 .contact-btn {
-    /* text-align: center; */
     display: flex;
     justify-self: center;
     margin: 0 auto;
@@ -255,4 +252,43 @@ html {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+}
+.landing-date{
+    color: #fff;
+    font-weight: bold;
+    position: relative;
+    bottom: 20px;
+    left: 100px;
+}
+@media only screen and (max-width: 600px) {
+    .landing-date{
+        left: 35px;
+        bottom: 16px;
+    }
+}
+.coming-soon-wrapper{
+    height: 100vh;
+    margin: 0;
+    background: url('./../images/page2.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #dc5c5c;
+}
+.coming-soon-wrapper h1{
+    font-size: 3rem;
+}
+.comingsoon-btn{
+    color: #fff;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    border-radius: 30px;
+    background: transparent;
+    border: 2px solid #f2f2f2;
+}
+.comingsoon-btn:hover{
+    background: #f2f2f2;
+    color: #1d1d1d;
 }
