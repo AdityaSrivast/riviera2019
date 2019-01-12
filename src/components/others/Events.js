@@ -76,7 +76,7 @@ class Events extends Component {
                 <Menu />
                 <Header title="EVENTS RIVIERA '19" image={EventImg} />
                 <div className="events">
-                    <br />
+                    <br /><br />
                     <Grid container className="event-main-grid">
                         <Grid item md={6} xs={12} className="event-grid" style={{ marginBottom: '20px' }}>
                             <div className="event-select-container">
