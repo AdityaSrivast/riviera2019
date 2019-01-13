@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Grid from '@material-ui/core/Grid';
 
+import { NavLink } from 'react-router-dom';
 // import RivieraBlack from './../../images/rivieralogo.png';
 import RivieraWhite from './../../images/rivieralogowhite.png';
 import Dancing from './../../images/footer.svg';
@@ -41,14 +42,14 @@ class Footer extends Component {
                     <Grid item md={4} xs={6} className="hide-sm" >
                         <div className="links-wrapper">
                             <p className="footer-head heading">Links</p>
-                            <span className="to-be-updated">(To be updated)</span>
+                            {/* <span className="to-be-updated">(To be updated)</span> */}
                             <ul className="footer-ul">
-                                <li>About Us</li>
-                                <li>Events</li>
-                                <li>Proshows</li>
-                                <li>Sports</li>
-                                <li>Sponsors</li>
-                                <li>Team</li>
+                                {/* <li>About Us</li> */}
+                                <li><NavLink to="/events">Events</NavLink></li>
+                                <li><NavLink to="/proshows">Proshows</NavLink></li>
+                                <li><NavLink to="/sports">Sports</NavLink></li>
+                                <li><NavLink to="/sponsors">Sponsors</NavLink></li>
+                                <li><NavLink to="/team">Team</NavLink></li>
                             </ul>
                         </div>
                     </Grid>

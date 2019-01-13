@@ -107,7 +107,7 @@ class Events extends Component {
                     </Grid>
                     {loading ?
                         <CircularProgress size={30} className="color-theme-red"></CircularProgress>
-                        :
+                        : 
                         <Grid container id="events-cards" className="events-cards">
 
                             {

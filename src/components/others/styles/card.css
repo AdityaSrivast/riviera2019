@@ -39,7 +39,7 @@
     font-weight: bold;
 }
 .card-contact {
-    margin-top: 2rem;
+    margin-top: 20px;
 }
 @media only screen and (max-width: 500px) {
     .card-wrapper {
