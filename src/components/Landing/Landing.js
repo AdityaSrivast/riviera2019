@@ -56,7 +56,7 @@ class Landing extends Component {
                     <div className="riviera-logo">
                         <img src={Logo} alt="Logo" id="head-logo" className="main-riviera-logo" />
                         <img src={LandingText} alt="tagline" className="tagline-logo" />
-                        <span className="landing-date">14-17th FEBRUARY</span>
+                        <span className="landing-date">14th-17th FEBRUARY</span>
                     </div>
                     <div>
                         <div className="countdown">

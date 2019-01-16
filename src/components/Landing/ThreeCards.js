@@ -83,7 +83,7 @@ class ThreeCards extends Component {
                         </div>
                         <div className="threecard-card">
                             {/* <div className="threecard-item"> */}
-                            <NavLink className="threecard-item" to="/sports">
+                            <NavLink className="threecard-item" to="/proshows">
                                 <img src={proshows} alt="Proshows" />
                                 <p>PROSHOWS</p>
                                 <p className="three-card-tagline">

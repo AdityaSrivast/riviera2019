@@ -7,6 +7,7 @@ import Pepsi from './../../images/pepsi.png';
 import Maruti from './../../images/maruti.jpg';
 import Gluco from './../../images/tata-gluco-plus.png';
 import Oneplus from './../../images/oneplus.png';
+import PaytmLogo from './../../images/Paytm_logo.png';
 
 
 
@@ -17,13 +18,32 @@ class Sponsors extends Component {
             <div className="sponsors-wrapper">
                 <h1 className="heading">SPONSORS</h1>
                 <div>
-                    <div className="title-spon-wrapper tac">
+                    <p className="spon-contact">Contact: Fayeed - 9985527882</p>
+                    <br /><br />
+                    <Grid container spacing={24} >
+                        <Grid item xs={12} md={6}>
+                            <div className="title-spon-wrapper tac">
+                                <p>Past Sponsor</p>
+                                <br />
+                                <img src={Pepsi} alt="pepsi" className="spon-image pepsi-logo" />
+                            </div>
+                        </Grid>
+                        <Grid item xs={12} md={6}>
+                            <div className="co-spon-wrapper tac">
+                                <p>Co-Sponsor</p>
+                                <br />
+                                <img src={PaytmLogo} alt="pepsi" className="spon-image pepsi-logo" />
+                            </div>
+                        </Grid>
+                    </Grid>
+                    {/* <div className="title-spon-wrapper tac">
                         <p>Past Sponsor</p>
                         <img src={Pepsi} alt="pepsi" className="spon-image pepsi-logo" />
-                    </div>
+                    </div> */}
                     <br />
-                    <div className="co-spon-wrapper tac">
+                    {/* <div className="co-spon-wrapper tac">
                         <p>Co-Sponsor</p>
+                        <img src={PaytmLogo} alt="pepsi" className="spon-image pepsi-logo" />
                         <Grid container spacing={24}>
                             <Grid item xs={4} className="sponsor-img-wrapper">
                                 <img src={Maruti} alt="logo" className="pepsi-logo" />
@@ -35,7 +55,7 @@ class Sponsors extends Component {
                                 <img src={Oneplus} alt="logo" className="oneplus-logo" />
                             </Grid>
                         </Grid>
-                    </div>
+                    </div> */}
                     <br /><br />
                     <div className="tac">
                         <button className="c-btn spon-btn">More Sponsors</button>

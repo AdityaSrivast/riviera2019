@@ -20,37 +20,42 @@
     /* font-weight: 500 !important;  give font weight to direct h1*/
 }
 
-.pepsi-logo{
-    height: auto;
-    width: 130px;
-    filter: grayscale(100%);
-    -webkit-filter: grayscale(100%);
-    /* opacity: .6; */
-    -webkit-transition: .6s;
-    -moz-transition: .6s;
-    transition: .6s;
+@media only screen and (max-width: 600px){
+    .pepsi-logo{
+        height: auto;
+        width: 90px;
+        
+    }
+    .oneplus-logo{
+        height: auto;
+        width: 130px;
+        position: relative;
+        top: 50px;
+        filter: grayscale(100%);
+        -webkit-filter: grayscale(100%);
+        /* opacity: .6; */
+        -webkit-transition: .6s;
+        -moz-transition: .6s;
+        transition: .6s;
+    }
 }
-.oneplus-logo{
-    height: auto;
-    width: 130px;
-    position: relative;
-    top: 50px;
-    filter: grayscale(100%);
-    -webkit-filter: grayscale(100%);
-    /* opacity: .6; */
-    -webkit-transition: .6s;
-    -moz-transition: .6s;
-    transition: .6s;
-}
+
+
 .pepsi-logo:hover, .oneplus-logo:hover {
     filter: grayscale(0%);
     opacity: 1;
     /* margin-top: -5px; */
     /* box-shadow: 0px 18px 22px -15px rgba(0,0,0,0.3); */
 }
-@media only screen and (max-width: 600px){
+@media only screen and (min-width: 600px){
     .pepsi-logo{
-        width: 90px;
+        width: 130px;
+        /* filter: grayscale(100%);
+        -webkit-filter: grayscale(100%);
+        opacity: .6;
+        -webkit-transition: .6s;
+        -moz-transition: .6s;
+        transition: .6s; */
     }
     .oneplus-logo{
         width: 90px;
@@ -60,4 +65,8 @@
 .spon-btn{
     background-color: #272C2E;
     color: white;
+}
+.spon-contact{
+    text-align: center;
+    color: #fff;
 }
