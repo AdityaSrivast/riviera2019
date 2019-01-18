@@ -1,6 +1,7 @@
 //external modules
 import React from 'react';
 import { Grid } from '@material-ui/core';
+import FontAwesome from 'react-fontawesome';
 
 //internal modules
 import Menu from './../Menu';
@@ -13,10 +14,122 @@ import './styles/sports.css';
 import SportImg from './../../images/sports.jpg';
 
 class Sports extends React.Component {
+
+    componentDidMount(){
+        this.setState({
+            sports: this.state.riviera_sports,
+            allSports: this.state.riviera_sports.concat(this.state.preriviera_sports)
+        })
+    }
+
     constructor() {
         super();
         this.state = {
-            sports: [
+            preriviera_sports: [
+                {
+                    "name": "Tennis (Men and Women)  ",
+                    "date": "01/30",
+                    "fee": "60",
+                    "team_size": "Individual event"
+                },
+                {
+                    "name": "Table Tennis (Men and Women) ",
+                    "date": "02/01",
+                    "fee": "60",
+                    "team_size": "Individual event"
+                },
+                {
+                    "name": "Badminton (Men and Women) ",
+                    "date": "02/02",
+                    "fee": "60",
+                    "team_size": "Individual event"
+                },
+                {
+                    "name": "Snooker (Men) ",
+                    "date": "02/02",
+                    "fee": "60",
+                    "team_size": "Individual event"
+                },
+                {
+                    "name": "Chess (Men and Women) ",
+                    "date": "02/02",
+                    "fee": "60",
+                    "team_size": "Individual event"
+                },
+                {
+                    "name": "Swimming (Men and Women) ",
+                    "date": "02/06",
+                    "fee": "60",
+                    "team_size": "Individual event"
+                },
+                {
+                    "name": "Futsal (Men)",
+                    "date": "01/28",
+                    "fee": "60 per person",
+                    "team_size": "5 to 8"
+                },
+                {
+                    "name": "Futsal (Women)",
+                    "date": "01/28",
+                    "fee": "60 per person",
+                    "team_size": "5 to 8"
+                },
+                {
+                    "name": "3 on 3 Basketball (Men) ",
+                    "date": "01/29",
+                    "fee": "60 per person",
+                    "team_size": "3 to 5"
+                },
+                {
+                    "name": "3 on 3 Basketball (Women) ",
+                    "date": "01/30",
+                    "fee": "60 per person",
+                    "team_size": "3 to 6"
+                },
+                {
+                    "name": "Volleyball Service ",
+                    "date": "Feb-2 to Feb-3",
+                    "fee": "60",
+                    "team_size": "Individual event"
+                },
+                {
+                    "name": "Hit it to win it ",
+                    "date": "Feb-2 to Feb-3",
+                    "fee": "60",
+                    "team_size": "Individual event"
+                },
+                {
+                    "name": "Throwball target ",
+                    "date": "Feb-2 to Feb-3",
+                    "fee": "60",
+                    "team_size": "Individual event"
+                },
+                {
+                    "name": "Tug of war ",
+                    "date": "Feb-2 to Feb-3",
+                    "fee": "60",
+                    "team_size": "8 to 10"
+                },
+                {
+                    "name": "Fun chess ",
+                    "date": "Feb-2 to Feb-3",
+                    "fee": "60",
+                    "team_size": "5"
+                },
+                {
+                    "name": "Basketball shootout ",
+                    "date": "Feb-2 to Feb-3",
+                    "fee": "60",
+                    "team_size": "Individual event"
+                },
+                {
+                    "name": "Cricket bowl out ",
+                    "date": "Feb-2 to Feb-3",
+                    "fee": "60",
+                    "team_size": "Individual event"
+                }
+            ],
+            riviera_sports: [
                     {
                         "name": "Cricket (MEN)",
                         "date": "02/05",
@@ -165,111 +278,43 @@ class Sports extends React.Component {
                         "fee": "250",
                         "team_size": "Individual event"
                     },
-                    {
-                        "name": "Tennis (Men and Women)  ",
-                        "date": "01/30",
-                        "fee": "60",
-                        "team_size": "Individual event"
-                    },
-                    {
-                        "name": "Table Tennis (Men and Women) ",
-                        "date": "02/01",
-                        "fee": "60",
-                        "team_size": "Individual event"
-                    },
-                    {
-                        "name": "Badminton (Men and Women) ",
-                        "date": "02/02",
-                        "fee": "60",
-                        "team_size": "Individual event"
-                    },
-                    {
-                        "name": "Snooker (Men) ",
-                        "date": "02/02",
-                        "fee": "60",
-                        "team_size": "Individual event"
-                    },
-                    {
-                        "name": "Chess (Men and Women) ",
-                        "date": "02/02",
-                        "fee": "60",
-                        "team_size": "Individual event"
-                    },
-                    {
-                        "name": "Swimming (Men and Women) ",
-                        "date": "02/06",
-                        "fee": "60",
-                        "team_size": "Individual event"
-                    },
-                    {
-                        "name": "Futsal (Men)",
-                        "date": "01/28",
-                        "fee": "60 per person",
-                        "team_size": "5 to 8"
-                    },
-                    {
-                        "name": "Futsal (Women)",
-                        "date": "01/28",
-                        "fee": "60 per person",
-                        "team_size": "5 to 8"
-                    },
-                    {
-                        "name": "3 on 3 Basketball (Men) ",
-                        "date": "01/29",
-                        "fee": "60 per person",
-                        "team_size": "3 to 5"
-                    },
-                    {
-                        "name": "3 on 3 Basketball (Women) ",
-                        "date": "01/30",
-                        "fee": "60 per person",
-                        "team_size": "3 to 6"
-                    },
-                    {
-                        "name": "Volleyball Service ",
-                        "date": "Feb-2 to Feb-3",
-                        "fee": "60",
-                        "team_size": "Individual event"
-                    },
-                    {
-                        "name": "Hit it to win it ",
-                        "date": "Feb-2 to Feb-3",
-                        "fee": "60",
-                        "team_size": "Individual event"
-                    },
-                    {
-                        "name": "Throwball target ",
-                        "date": "Feb-2 to Feb-3",
-                        "fee": "60",
-                        "team_size": "Individual event"
-                    },
-                    {
-                        "name": "Tug of war ",
-                        "date": "Feb-2 to Feb-3",
-                        "fee": "60",
-                        "team_size": "8 to 10"
-                    },
-                    {
-                        "name": "Fun chess ",
-                        "date": "Feb-2 to Feb-3",
-                        "fee": "60",
-                        "team_size": "5"
-                    },
-                    {
-                        "name": "Basketball shootout ",
-                        "date": "Feb-2 to Feb-3",
-                        "fee": "60",
-                        "team_size": "Individual event"
-                    },
-                    {
-                        "name": "Cricket bowl out ",
-                        "date": "Feb-2 to Feb-3",
-                        "fee": "60",
-                        "team_size": "Individual event"
-                    }
-                ]
+                ],
+                categories: ['Riviera Sports(only for externals)', 'Pre-Riviera Sports(only for VITians)'],
+                category: '',
+                sports: [],
+                allSports: []
         }
     }
+
+    search = (value) => {
+        let updatedList = this.state.allSports;
+        console.log(value);
+        updatedList = updatedList.filter((item) =>{
+            return item.name.toLowerCase().search(
+                value.toLowerCase()) !== -1;
+        });
+        console.log(updatedList);
+        this.setState({
+            sports: updatedList
+        });
+    }
+
+    filterCategory = (e) => {
+        console.log(e.target.value);
+        if(e.target.value.toLowerCase().search('pre-riviera')==-1){
+            this.setState({
+                sports:this.state.riviera_sports,
+                category: e.target.value
+            });
+        } else {
+            this.setState({
+                sports: this.state.preriviera_sports,
+                category: e.target.value
+            });
+        }
+    }
+
+
     render() {
         return (
             <div className="sports-section">
@@ -277,6 +322,35 @@ class Sports extends React.Component {
                 <Header title="SPORTS RIVIERA '19" image={SportImg} />
                 <div className="sports">
                     <br />
+                    <Grid container className="event-main-grid">
+                        <Grid item md={6} xs={12} className="event-grid" style={{ marginBottom: '20px' }}>
+                            <div className="event-select-container">
+                                <select className="event-select" onChange={this.filterCategory}>
+                                    {
+                                        this.state.categories.map((category,i) => 
+                                            <option key={i}>{category}</option>
+                                        )
+                                    }
+                                </select>
+                            </div>
+                        </Grid>
+                        <Grid item md={6} xs={12} className="event-grid">
+                            <div className='search-container' style={{ display: 'flex', justifyContent: 'center', width: '100%' }}>
+                                <input
+                                    type='text'
+                                    spellCheck="false"
+                                    onChange={(e) => this.search(e.target.value)}
+                                    style={{
+
+                                    }}
+                                    className="events-search-box"
+                                    placeholder='Search'
+                                />
+                                <FontAwesome name='search' style={{ padding: '10px', background: '#666', color: '#bbb' }} />
+                            </div>
+                        </Grid>
+                    </Grid>
+
                     <Grid container id="events-cards" >
                         {
                             this.state.sports.map((sport, i) =>

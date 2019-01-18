@@ -23,7 +23,7 @@ class Sponsors extends Component {
                     <Grid container spacing={24} >
                         <Grid item xs={12} md={6}>
                             <div className="title-spon-wrapper tac">
-                                <p>Past Sponsor</p>
+                                <p>Title Sponsor</p>
                                 <br />
                                 <img src={Pepsi} alt="pepsi" className="spon-image pepsi-logo" />
                             </div>
