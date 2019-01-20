@@ -2,6 +2,7 @@
 import React from 'react';
 import { Grid } from '@material-ui/core';
 import FontAwesome from 'react-fontawesome';
+import moment from 'moment';
 
 //internal modules
 import Menu from './../Menu';
@@ -19,9 +20,25 @@ class Sports extends React.Component {
         this.setState({
             sports: this.state.riviera_sports,
             allSports: this.state.riviera_sports.concat(this.state.preriviera_sports)
-        })
-    }
+        });
+        
+        let {preriviera_sports, riviera_sports} = this.state;
+        for (let i in preriviera_sports) {
+            let curr = preriviera_sports[i]['date'];
+            preriviera_sports[i]['date']=moment(curr).format("MMMM Do");
+            if(preriviera_sports[i]['date']=='Invalid date'){
+                preriviera_sports[i]['date']=curr;
+            }
+        }
 
+        for (let i in riviera_sports) {
+            let curr = riviera_sports[i]['date'];
+            riviera_sports[i]['date']=moment(curr).format("MMMM Do");
+            if(riviera_sports[i]['date']=='Invalid date'){
+                riviera_sports[i]['date']=curr;
+            }
+        }
+    }
     constructor() {
         super();
         this.state = {
@@ -99,22 +116,28 @@ class Sports extends React.Component {
                     "team_size": "Individual event"
                 },
                 {
-                    "name": "Throwball target ",
+                    "name": "Throwball target",
                     "date": "Feb-2 to Feb-3",
                     "fee": "60",
                     "team_size": "Individual event"
                 },
                 {
-                    "name": "Tug of war ",
+                    "name": "Tug of war (Men)",
                     "date": "Feb-2 to Feb-3",
                     "fee": "60",
                     "team_size": "8 to 10"
                 },
                 {
-                    "name": "Fun chess ",
+                    "name": "Tug of war (Women)",
                     "date": "Feb-2 to Feb-3",
                     "fee": "60",
                     "team_size": "5"
+                },
+                {
+                    "name": "Water Splash Chess",
+                    "date": "Feb-2 to Feb-3",
+                    "fee": "60",
+                    "team_size": "Individual event"
                 },
                 {
                     "name": "Basketball shootout ",
@@ -131,7 +154,7 @@ class Sports extends React.Component {
             ],
             riviera_sports: [
                     {
-                        "name": "Cricket (MEN)",
+                        "name": "Cricket",
                         "date": "02/05",
                         "fee": "4000",
                         "team_size": "11 to 16",
@@ -229,6 +252,12 @@ class Sports extends React.Component {
                         "date": "02/09",
                         "fee": "1250",
                         "team_size": "Individual event"
+                    },
+                    {
+                        "name": "Chess (WOMEN)",
+                        "date": "01/28",
+                        "fee": "1250",
+                        "team_size": "3 to 5"
                     },
                     {
                         "name": "Badminton (WOMEN)",

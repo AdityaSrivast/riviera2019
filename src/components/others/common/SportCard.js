@@ -8,7 +8,7 @@ const SportCard = props => {
             <div className="card-container sport-card">
                 <p className="card-sportname">{props.sport}</p>
                 <p className="card-fee">Fee: {props.fee}</p>
-                <p className="card-date">Date: {props.date}/19</p>
+                <p className="card-date">Date: {props.date}</p>
                 <p className="card-team">Team Size: {props.team_size.toLowerCase()}</p>
             </div>
         </div>
