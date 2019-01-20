@@ -1,0 +1,78 @@
+.campus-section {
+    background: url('./../../../images/page2.png');
+    background-color: #1d1d1d;
+    background-size: contain;
+}
+
+.college-buttons{
+    width: 100%;
+    display: flex;
+    /* justify-self: center; */
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.campus-grid{
+    text-align: center;
+}
+
+.collegeBtn{
+    width: 100%;
+    color: red !important;
+    border-color: red !important;
+    min-height: 75px;
+    height: 75px;
+}
+
+.collegeBtn:hover{
+    background-color: red !important;
+    color: white !important;
+}
+
+.campus{
+    width: 80%;
+    margin: 10px auto;
+    text-align: center;
+    color: white !important;
+}
+
+th,td,tr{
+    font-size: 16px !important;
+    color: white !important;
+    opacity: 1 !important;
+    text-align: center !important;
+}
+
+td{
+    border-right: 1px solid rgba(224, 224, 224, 1) !important;
+    border-left: 1px solid rgba(224, 224, 224, 1) !important;
+}
+
+/* .float-rows{
+    float: right;
+    position: relative;
+    right: 0;
+}
+
+tbody{
+    width: 100px;
+    position: relative;
+} */
+
+.no-border{
+    border-bottom: none !important;
+}
+
+.duties{
+    margin-top: 8em;
+}
+
+.duties-list{
+    text-align: left;
+    margin-left: 5%;
+    font-size: 20px;
+}
+
+.duties-list li{
+    margin-bottom: 1.5em;
+}

@@ -4,6 +4,7 @@ import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom';
 import Main from './components/Landing';
 import Events from './components/others/Events';
 import Sports from './components/others/sports';
+import CampusAmbassador from "./components/others/campus_ambassador";
 import Proshows from './components/others/proshows';
 import Team from './components/others/team';
 import Sponsors from './components/others/sponsors';
@@ -25,6 +26,7 @@ class App extends Component {
 						<Route exact path="/events" component={Events} />
 						<Route exact path="/sports" component={Sports}/>
 						<Route exact path="/proshows" component={ComingSoon}/>
+						<Route exact path="/campus" component={CampusAmbassador}/>
 						<Route exact path="/team" component={ComingSoon}/>
 						<Route exact path="/sponsors" component={ComingSoon}/>
 						<Route exact path="/contact" component={ComingSoon}/>

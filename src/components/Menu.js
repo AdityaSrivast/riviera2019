@@ -33,7 +33,7 @@ class Fullpage extends Component {
         const sideList = (
             <div className={classes.list}>
                 <List>
-                    {['HOME', 'EVENTS', 'SPORTS', 'PROSHOWS', 'TEAM RIVIERA', 'SPONSORS & PARTNERS', 'CONTACT'].map((text, index) => (
+                    {['HOME', 'EVENTS', 'SPORTS', 'PROSHOWS', 'TEAM RIVIERA','CAMPUS AMBASSADOR', 'SPONSORS & PARTNERS', 'CONTACT'].map((text, index) => (
                         <NavLink to={text.split(' ')[0].toLowerCase()} className="navlink-btn">
                             <ListItem button key={text}>
                                 <ListItemText primary={text} />
