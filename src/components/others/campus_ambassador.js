@@ -30,7 +30,7 @@ class CampusAmbassador extends Component{
 
     isActive(id){
         if(this.state.activeRegion==id){
-            return 'active';
+            return 'activeBtn';
         }
         return '';
     }

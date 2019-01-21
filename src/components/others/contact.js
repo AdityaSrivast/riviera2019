@@ -1,10 +1,14 @@
 import React from 'react';
 import Header from './common/header';
-// import events from './images/events.jpg';
+import Image from './../../images/sports.jpg';
+
 
 const Contact = () => {
     return(
-        <Header title="CONTACT US" />
+        <Header title="CONTACT US"  image={Image}/>
+            <div className="contact-section">
+                
+            </div>
     );
 }
 
