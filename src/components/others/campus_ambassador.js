@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Grid, Button, List, ListItem, ListItemText } from '@material-ui/core';
+import { Grid, Button } from '@material-ui/core';
 import Menu from './../Menu';
 import Header from './common/header';
 
@@ -20,7 +20,6 @@ class CampusAmbassador extends Component{
                 },
             activeRegion: 0
         };
-        // console.log(Object.keys(this.state.colleges));
     }
 
     changeTable(id){
@@ -31,7 +30,6 @@ class CampusAmbassador extends Component{
 
     render(){
         let {colleges ,activeRegion} = this.state;
-
         return(
             <div className="campus-section">
                 <Menu />
@@ -96,7 +94,6 @@ class CampusAmbassador extends Component{
                             <li>As a proof of registrations, the student ambassador needs to maintain a record of the details of registered students, in a format described by the Riviera’19 team.</li>
                         </ul>
                     </div>
-
                 </div>
             </div>
         );

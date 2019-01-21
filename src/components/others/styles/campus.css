@@ -8,6 +8,7 @@
     width: 100%;
     display: flex;
     /* justify-self: center; */
+    flex-wrap: wrap;
     justify-content: center;
     margin-top: 25px;
 }
@@ -24,6 +25,10 @@
     height: 75px;
 }
 
+.collegeBtn span{
+    font-size: 1rem;
+}
+
 .collegeBtn:hover{
     background-color: red !important;
     color: white !important;
@@ -36,8 +41,12 @@
     color: white !important;
 }
 
+table{
+    overflow: scroll !important;
+}
+
 th,td,tr{
-    font-size: 16px !important;
+    font-size: 1rem !important;
     color: white !important;
     opacity: 1 !important;
     text-align: center !important;
@@ -46,6 +55,7 @@ th,td,tr{
 td{
     border-right: 1px solid rgba(224, 224, 224, 1) !important;
     border-left: 1px solid rgba(224, 224, 224, 1) !important;
+    padding: 0 5px !important;
 }
 
 /* .float-rows{
@@ -69,10 +79,21 @@ tbody{
 
 .duties-list{
     text-align: left;
-    margin-left: 5%;
+    margin: 15px 5%;
     font-size: 20px;
 }
 
 .duties-list li{
     margin-bottom: 1.5em;
+}
+
+@media only screen and (max-width:600px){
+    .duties-list{
+        margin-left: -20px;
+    }
+
+    th,td,tr{
+        font-size: 0.8rem !important;
+
+    }
 }

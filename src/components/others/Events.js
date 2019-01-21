@@ -24,7 +24,7 @@ class Events extends Component {
             query: '',
             loading: true,
             events: [],
-            categories : ['Premium', 'Pre-Riviera', 'Drama-Art-and-Photography', 'Music', 'Dance', 'Workshop', 'Quiz', 'Words-Worth-English', 'Words-Worth-Tamil', 'Words-Worth-Hindi', 'Words-Worth-Telugu', 'Adventure-Sports', 'Cyber-Engage', 'Informal']
+            categories : ['Premium', 'Pre Riviera', 'Drama Art and Photography', 'Music', 'Dance', 'Workshop', 'Quiz', 'Words Worth English', 'Words Worth Tamil', 'Words Worth Hindi', 'Words Worth Telugu', 'Adventure Sports', 'Cyber Engage', 'Informal']
         }
         this.getEvents();
     }
@@ -114,7 +114,7 @@ class Events extends Component {
                                 events.map((event, i) =>
                                     <Grid item md={6} sm={12} key={i}>
                                         <Card club={event.club} event={event.name} description={event.description} coordinator1={event.coordinator1}
-                                            coordinator2={event.coordinator2} phone1={event.phone1} phone2={event.phone2} />
+                                            coordinator2={event.coordinator2} phone1={event.phone1} phone2={event.phone2} fees={event.fees} />
                                     </Grid>
                                 )
                             }
