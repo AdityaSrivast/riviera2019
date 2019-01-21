@@ -10,6 +10,7 @@ const Card = props => {
                 <p className="card-eventname">{props.event}</p>
                 <p className="card-content">{props.description}</p>
                 <p className="card-contact">
+                <p className="card-fees"><b>Reg. Fees: </b> {props.fees}</p>
                 <b>Contact</b><br />
                 {props.coordinator1} - {props.phone1}<br />
                 {props.coordinator2} - {props.phone2}

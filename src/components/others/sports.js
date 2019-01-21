@@ -298,23 +298,18 @@ class Sports extends React.Component {
         for (let i in preriviera_sports) {
             let curr = moment(preriviera_sports[i]['date']).format('MMMM Do');
             let newState=preriviera_sports[i];
-            // console.log("Old state", newState);
-            
             if(curr!='Invalid date'){
                 newState={
                     ...newState,
                     date: curr
                 }
             }
-            // console.log("New state", newState);
             newpre.push(newState);
         }
 
         for (let i in riviera_sports) {
             let curr = moment(riviera_sports[i]['date']).format('MMMM Do');
             let newState=riviera_sports[i];
-            console.log("Old state", newState);
-            console.log(curr);
             if(curr!='Invalid date'){
                 newState={
                     ...newState,
