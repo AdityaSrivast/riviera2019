@@ -9,7 +9,7 @@ const SportCard = props => {
                 <p className="card-sportname">{props.sport}</p>
                 <p className="card-fee">Fee: {props.fee}</p>
                 <p className="card-date">Date: {props.date}</p>
-                <p className="card-team">Team Size: {props.team_size.toLowerCase()}</p>
+                <p className="card-team">Team Size: {props.team_size}</p>
             </div>
         </div>
     );

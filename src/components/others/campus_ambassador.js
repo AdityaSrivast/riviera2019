@@ -28,6 +28,13 @@ class CampusAmbassador extends Component{
         });
     }
 
+    isActive(id){
+        if(this.state.activeRegion==id){
+            return 'active';
+        }
+        return '';
+    }
+
     render(){
         let {colleges ,activeRegion} = this.state;
         return(
@@ -39,13 +46,15 @@ class CampusAmbassador extends Component{
                         <div className="college-buttons">
                             {
                                 Object.keys(colleges).map((college,i)=>
-                                    <Grid item md={4} sm={12} xs={12} className="campus-grid" style={{marginBottom: '20px'}}>
+                                    <Grid item md={3} sm={12} xs={12} className="campus-grid" style={{margin: '20px 10px'}}>
                                             <Button 
                                             key={i} 
                                             variant="outlined" 
                                             size="large" 
-                                            className="collegeBtn" 
-                                            onClick={() => this.changeTable(colleges[college])}>
+                                            className={"collegeBtn "+ this.isActive(colleges[college])}
+                                            onClick={(e) => {
+                                                this.changeTable(colleges[college]);
+                                                }}>
                                                 {college}
                                             </Button>
                                     </Grid>
@@ -53,7 +62,7 @@ class CampusAmbassador extends Component{
                             }
                         </div>
                     </Grid>
-                    <div className="registation-table">
+                    <div className="registration-table">
                         {(()=>{
                             if(activeRegion==0){
                                 return (

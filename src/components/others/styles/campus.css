@@ -1,3 +1,15 @@
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;  
+}
+::-webkit-scrollbar-thumb {
+    background: transparent;
+}
+
 .campus-section {
     background: url('./../../../images/page2.png');
     background-color: #1d1d1d;
@@ -29,26 +41,31 @@
     font-size: 1rem;
 }
 
+.active{
+    background-color: red !important;
+    color: white !important;
+}
+
 .collegeBtn:hover{
     background-color: red !important;
     color: white !important;
 }
 
 .campus{
-    width: 80%;
+    width: 70%;
     margin: 10px auto;
     text-align: center;
     color: white !important;
 }
 
-table{
-    overflow: scroll !important;
+.registration-table{
+    overflow: auto;
 }
 
 th,td,tr{
     font-size: 1rem !important;
     color: white !important;
-    opacity: 1 !important;
+    opacity: 1;
     text-align: center !important;
 }
 
