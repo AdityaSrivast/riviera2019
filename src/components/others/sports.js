@@ -15,30 +15,6 @@ import './styles/sports.css';
 import SportImg from './../../images/sports.jpg';
 
 class Sports extends React.Component {
-
-    componentDidMount(){
-        this.setState({
-            sports: this.state.riviera_sports,
-            allSports: this.state.riviera_sports.concat(this.state.preriviera_sports)
-        });
-        
-        let {preriviera_sports, riviera_sports} = this.state;
-        for (let i in preriviera_sports) {
-            let curr = preriviera_sports[i]['date'];
-            preriviera_sports[i]['date']=moment(curr).format("MMMM Do");
-            if(preriviera_sports[i]['date']=='Invalid date'){
-                preriviera_sports[i]['date']=curr;
-            }
-        }
-
-        for (let i in riviera_sports) {
-            let curr = riviera_sports[i]['date'];
-            riviera_sports[i]['date']=moment(curr).format("MMMM Do");
-            if(riviera_sports[i]['date']=='Invalid date'){
-                riviera_sports[i]['date']=curr;
-            }
-        }
-    }
     constructor() {
         super();
         this.state = {
@@ -313,6 +289,46 @@ class Sports extends React.Component {
                 sports: [],
                 allSports: []
         }
+    }
+
+    componentDidMount(){
+        let {preriviera_sports, riviera_sports} = this.state;
+        let newpre=[];
+        let newriv=[];
+        for (let i in preriviera_sports) {
+            let curr = moment(preriviera_sports[i]['date']).format('MMMM Do');
+            let newState=preriviera_sports[i];
+            // console.log("Old state", newState);
+            
+            if(curr!='Invalid date'){
+                newState={
+                    ...newState,
+                    date: curr
+                }
+            }
+            // console.log("New state", newState);
+            newpre.push(newState);
+        }
+
+        for (let i in riviera_sports) {
+            let curr = moment(riviera_sports[i]['date']).format('MMMM Do');
+            let newState=riviera_sports[i];
+            console.log("Old state", newState);
+            console.log(curr);
+            if(curr!='Invalid date'){
+                newState={
+                    ...newState,
+                    date: curr
+                }
+            }
+            newriv.push(newState);
+        }
+        this.setState({
+            riviera_sports: newriv,
+            preriviera_sports: newpre,
+            sports: newriv,
+            allSports: newriv.concat(newpre)
+        });
     }
 
     search = (value) => {
