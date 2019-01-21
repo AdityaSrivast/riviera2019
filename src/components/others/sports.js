@@ -44,271 +44,265 @@ class Sports extends React.Component {
         this.state = {
             preriviera_sports: [
                 {
-                    "name": "Tennis (Men and Women)  ",
-                    "date": "01/30",
+                    "name": "Tennis (Men and Women)",
+                    "date": "30th January",
                     "fee": "60",
                     "team_size": "Individual event"
                 },
                 {
-                    "name": "Table Tennis (Men and Women) ",
-                    "date": "02/01",
+                    "name": "Table Tennis (Men and Women)",
+                    "date": "1st February",
                     "fee": "60",
                     "team_size": "Individual event"
                 },
                 {
-                    "name": "Badminton (Men and Women) ",
-                    "date": "02/02",
+                    "name": "Badminton (Men and Women)",
+                    "date": "2nd February",
                     "fee": "60",
                     "team_size": "Individual event"
                 },
                 {
-                    "name": "Snooker (Men) ",
-                    "date": "02/02",
+                    "name": "Snooker (Men)",
+                    "date": "2nd February",
                     "fee": "60",
                     "team_size": "Individual event"
                 },
                 {
-                    "name": "Chess (Men and Women) ",
-                    "date": "02/02",
+                    "name": "Chess (Men and Women)",
+                    "date": "2nd February",
                     "fee": "60",
                     "team_size": "Individual event"
                 },
                 {
-                    "name": "Swimming (Men and Women) ",
-                    "date": "02/06",
+                    "name": "Swimming (Men and Women)",
+                    "date": "6th February",
                     "fee": "60",
                     "team_size": "Individual event"
                 },
                 {
                     "name": "Futsal (Men)",
-                    "date": "01/28",
+                    "date": "28th January",
                     "fee": "60 per person",
                     "team_size": "5 to 8"
                 },
                 {
                     "name": "Futsal (Women)",
-                    "date": "01/28",
+                    "date": "28th January",
                     "fee": "60 per person",
                     "team_size": "5 to 8"
                 },
                 {
-                    "name": "3 on 3 Basketball (Men) ",
-                    "date": "01/29",
+                    "name": "3-on-3 Basketball (Men)",
+                    "date": "29th January",
                     "fee": "60 per person",
                     "team_size": "3 to 5"
                 },
                 {
-                    "name": "3 on 3 Basketball (Women) ",
-                    "date": "01/30",
+                    "name": "3-on-3 Basketball (Women)",
+                    "date": "30th January",
                     "fee": "60 per person",
-                    "team_size": "3 to 6"
+                    "team_size": "3 to 5"
                 },
                 {
-                    "name": "Volleyball Service ",
-                    "date": "Feb-2 to Feb-3",
+                    "name": "Volleyball Service",
+                    "date": "2nd - 3rd February",
                     "fee": "60",
                     "team_size": "Individual event"
                 },
                 {
-                    "name": "Hit it to win it ",
-                    "date": "Feb-2 to Feb-3",
+                    "name": "Hit It To Win It",
+                    "date": "2nd - 3rd February",
                     "fee": "60",
                     "team_size": "Individual event"
                 },
                 {
-                    "name": "Throwball target",
-                    "date": "Feb-2 to Feb-3",
+                    "name": "Throwball Target",
+                    "date": "2nd - 3rd February",
                     "fee": "60",
                     "team_size": "Individual event"
                 },
                 {
-                    "name": "Tug of war (Men)",
-                    "date": "Feb-2 to Feb-3",
+                    "name": "Tug Of War (Men)",
+                    "date": "2nd - 3rd February",
                     "fee": "60",
                     "team_size": "8 to 10"
                 },
                 {
                     "name": "Tug of war (Women)",
-                    "date": "Feb-2 to Feb-3",
+                    "date": "2nd - 3rd February",
                     "fee": "60",
                     "team_size": "5"
                 },
                 {
                     "name": "Water Splash Chess",
-                    "date": "Feb-2 to Feb-3",
+                    "date": "2nd - 3rd February",
                     "fee": "60",
                     "team_size": "Individual event"
                 },
                 {
-                    "name": "Basketball shootout ",
-                    "date": "Feb-2 to Feb-3",
+                    "name": "Basketball Shootout",
+                    "date": "2nd - 3rd February",
                     "fee": "60",
                     "team_size": "Individual event"
                 },
                 {
-                    "name": "Cricket bowl out ",
-                    "date": "Feb-2 to Feb-3",
+                    "name": "Cricket Bowl Out",
+                    "date": "2nd - 3rd February",
                     "fee": "60",
                     "team_size": "Individual event"
                 }
             ],
             riviera_sports: [
                     {
-                        "name": "Cricket",
-                        "date": "02/05",
+                        "name": "Cricket (MEN)",
+                        "date": "5th February",
                         "fee": "4000",
                         "team_size": "11 to 16",
-                        "undefined": "MEN "
+                        "undefined": "MEN"
                     },
                     
                     {
                         "name": "Badminton (MEN)",
-                        "date": "02/08",
+                        "date": "8th February",
                         "fee": "1250",
                         "team_size": "4 to 5"
                     },
                     {
                         "name": "Handball (MEN)",
-                        "date": "02/09",
+                        "date": "9th February",
                         "fee": "3000",
                         "team_size": "10 to 12"
                     },
                     {
                         "name": "Chess (MEN)",
-                        "date": "02/09",
+                        "date": "9th February",
                         "fee": "1250",
                         "team_size": "4 to 5"
                     },
                     {
                         "name": "Table Tennis (MEN)",
-                        "date": "02/10",
+                        "date": "10th February",
                         "fee": "1250",
                         "team_size": "4 to 5"
                     },
 
                     {
                         "name": "Hockey (MEN)",
-                        "date": "02/10",
+                        "date": "10th February",
                         "fee": "4000",
                         "team_size": "13 to 16"
                     },
                     {
                         "name": "Basketball (MEN)",
-                        "date": "02/11",
+                        "date": "11th February",
                         "fee": "3000",
                         "team_size": "8 to 12"
                     },
                     {
                         "name": "Tennis (MEN)",
-                        "date": "02/11",
+                        "date": "11th February",
                         "fee": "1250",
                         "team_size": "5 to 6"
                     },
                     {
                         "name": "Football (MEN)",
-                        "date": "02/12",
+                        "date": "12th February",
                         "fee": "4000",
                         "team_size": "11 to 18"
                     },
                     {
                         "name": "Volleyball (MEN)",
-                        "date": "02/13",
+                        "date": "13th February",
                         "fee": "3000",
                         "team_size": "6 to 12"
                     },
                     {
-                        "name": "Athletics(100, 200m, 400m, 1.5km, Long jump, Shotput, Discuss throw, Tripple Jump) (MEN)",
-                        "date": "02/07",
+                        "name": "Athletics (100m, 200m, 400m, 1.5km, Long jump, Shotput, Discuss Throw, Triple Jump) (MEN)",
+                        "date": "7th February",
                         "fee": "250",
                         "team_size": "Individual event"
                     },
                     {
                         "name": "Snooker (MEN)",
-                        "date": "02/14",
+                        "date": "14th February",
                         "fee": "1250",
                         "team_size": "4"
                     },
                     {
-                        "name": "Swimming (Freestyle, Backstroke, Breast Stroke, Butterfly - 50 and 100m)(MEN)",
-                        "date": "02/15",
+                        "name": "Swimming (Freestyle, Backstroke, Breast Stroke, Butterfly - 50 and 100m) (MEN)",
+                        "date": "15th February",
                         "fee": "250",
                         "team_size": "Individual event"
                     },
                     {
                         "name": "Mr. Riviera (MEN)",
-                        "date": "02/16",
+                        "date": "16th February",
                         "fee": "250",
                         "team_size": "Individual event"
                     },
                     {
-                        "name": "Athletics(100, 200m, 400m, 800m, Long jump, Shotput, Discuss throw, Tripple Jump)(WOMEN)",
-                        "date": "02/07",
+                        "name": "Athletics (100m, 200m, 400m, 800m, Long jump, Shotput, Discuss Throw, Triple Jump) (WOMEN)",
+                        "date": "7th February",
                         "fee": "250",
                         "team_size": "Individual event",
                         "undefined": "WOMEN "
                     },
                     {
                         "name": "Chess (WOMEN)",
-                        "date": "02/09",
-                        "fee": "1250",
+                        "date": "9th February",
+                        "fee": "250",
                         "team_size": "Individual event"
                     },
                     {
-                        "name": "Chess (WOMEN)",
-                        "date": "01/28",
-                        "fee": "1250",
-                        "team_size": "3 to 5"
-                    },
-                    {
                         "name": "Badminton (WOMEN)",
-                        "date": "02/09",
+                        "date": "9th February",
                         "fee": "1250",
                         "team_size": "4 to 5"
                     },
                     {
                         "name": "Table Tennis (WOMEN)",
-                        "date": "02/11",
+                        "date": "11th February",
                         "fee": "1250",
                         "team_size": "4 to 5"
                     },
                     {
                         "name": "Futsal (WOMEN)",
-                        "date": "02/11",
+                        "date": "11th February",
                         "fee": "2000",
                         "team_size": "5 to 9"
                     },
                     {
                         "name": "Tennis (WOMEN)",
-                        "date": "02/12",
+                        "date": "12th February",
                         "fee": "1250",
                         "team_size": "4 to 5"
                     },
                     {
                         "name": "Basketball (WOMEN)",
-                        "date": "02/12",
+                        "date": "12th February",
                         "fee": "3000",
                         "team_size": "8 to 12"
                     },
                     {
                         "name": "Throwball (WOMEN)",
-                        "date": "02/13",
+                        "date": "13th February",
                         "fee": "3000",
                         "team_size": "9 to 12"
                     },
                     {
                         "name": "Volleyball (WOMEN)",
-                        "date": "02/15",
+                        "date": "15th February",
                         "fee": "3000",
                         "team_size": "6 to 12"
                     },
                     {
                         "name": "Swimming (Freestyle, Backstroke, Breast Stroke, Butterfly - 50 and 100m) (WOMEN)",
-                        "date": "02/16",
+                        "date": "16th February",
                         "fee": "250",
                         "team_size": "Individual event"
                     },
                 ],
-                categories: ['Riviera Sports(only for externals)', 'Pre-Riviera Sports(only for VITians)'],
+                categories: ['Riviera Sports (only for externals)', 'Pre-Riviera Sports (only for VITians)'],
                 category: '',
                 sports: [],
                 allSports: []
