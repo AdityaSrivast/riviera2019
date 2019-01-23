@@ -1,0 +1,40 @@
+.contact-section {
+    background: url('./../../../images/page2.png');
+    background-color: #1d1d1d;
+    background-size: contain;
+}
+
+.contact-grid{
+    text-align: center;
+}
+
+.contact-grid .card-depname{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.contact-grid .card-name{
+    font-size: 1.2em;
+}
+
+.card-number, .card-email{
+    text-align: center;
+}
+
+.card-email{
+    font-weight: bold;
+}
+
+.section2{
+    display: flex;
+    flex-flow: row;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+@media only  screen and (max-width: 500px){
+    .card-wrapper{
+        width: 80% !important;
+    }
+}

@@ -8,6 +8,8 @@ import moment from 'moment';
 import Menu from './../Menu';
 import Header from './common/header';
 import SportCard from './common/SportCard';
+import SmallFooter from './common/smallFooter';
+
 
 import './styles/sports.css';
 
@@ -395,6 +397,7 @@ class Sports extends React.Component {
                         }
                     </Grid>
                 </div><br /><br />
+                <SmallFooter />
             </div>
         );
     }

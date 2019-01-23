@@ -4,6 +4,8 @@ import Menu from './../Menu';
 import Header from './common/header';
 
 import CommonTableRows from './common/tableRows';
+import SmallFooter from './common/smallFooter';
+
 
 import Img from './../../images/event-main.jpg';
 import './styles/campus.css';
@@ -104,6 +106,7 @@ class CampusAmbassador extends Component{
                         </ul>
                     </div>
                 </div>
+                <SmallFooter />
             </div>
         );
     }

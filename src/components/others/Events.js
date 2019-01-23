@@ -8,6 +8,8 @@ import axios from 'axios';
 import Menu from './../Menu';
 import Header from './common/header';
 import Card from './common/card';
+import SmallFooter from './common/smallFooter';
+
 
 // others
 import urls from '../urls';
@@ -123,6 +125,7 @@ class Events extends Component {
                     }
                 </div>
                 <br /><br />
+                <SmallFooter />
             </div>
         );
     }

@@ -4,8 +4,10 @@ import Menu from "../Menu";
 import Image from './../../images/sports.jpg';
 import ContactCard from './common/ContactCard';
 import {Grid} from '@material-ui/core';
+import SmallFooter from './common/smallFooter';
+import './styles/contact.css';
 
-let contacts = [
+let contacts1 = [
     {
         dep: "Registrations",
         name1: "Akshay Gupta",
@@ -29,7 +31,10 @@ let contacts = [
         name2: "Vaibhav Mathur",
         contact2: "9003734769",
         email: "sports.riviera@vit.ac.in"
-    },
+    }
+];
+
+let contacts2 =[
     {
         dep: "Accomodation",
         name1: "Yash Gupta",
@@ -37,6 +42,14 @@ let contacts = [
         name2: "Ballasani Smrithi",
         contact2: "9003728789",
         email: "gc.riviera1@vit.ac.in"
+    },
+    {
+        dep: "Sponsorship & Stalls",
+        name1: "Abdul Fayeed Shaik",
+        contact1: "9985527882",
+        name2: "Shivam Kumar Singh",
+        contact2: "6374830459",
+        email: "stalls.riviera@vit.ac.in"
     }
 ];
 
@@ -45,20 +58,37 @@ const Contact = () => {
         <div className="contact-section">
         <Menu />
             <Header title="CONTACT US"  image={Image}/>
-                <Grid container>
+                <Grid  container>
                     {
-                        contacts.map((contact,i)=>  
-                            <Grid item className="contact-grid" md={3} sm={12} xs={12}>
+                        contacts1.map((contact,i)=>
+                            <Grid item className="contact-grid" md={4} sm={12} xs={12}>
                                 <ContactCard 
                                 dep={contact.dep} 
                                 name1={contact.name1} 
                                 name2={contact.name2} 
-                                contact1={contact.contact1} contact2={contact.contact2}
+                                contact1={contact.contact1} 
+                                contact2={contact.contact2}
                                 email={contact.email}  />
                             </Grid>
                         )
                     }
+                    <div className="section2">
+                    {
+                        contacts2.map((contact,i)=>
+                        <Grid item className="contact-grid" md={4} sm={12} xs={12}>
+                            <ContactCard 
+                            dep={contact.dep} 
+                            name1={contact.name1} 
+                            name2={contact.name2} 
+                            contact1={contact.contact1} 
+                            contact2={contact.contact2}
+                            email={contact.email}  />
+                        </Grid>)
+                    }
+                    </div>
                 </Grid>
+                {/* <Footer /> */}
+            <SmallFooter />
         </div>
     );
 }

@@ -1,0 +1,12 @@
+.small-footer{
+    width: 100%;
+    margin-top: 20px;
+    height: 40px;
+    font-size: 20px;
+    background-color: rgb(26, 26, 26);
+    display: flex;
+    flex-flow: row;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}

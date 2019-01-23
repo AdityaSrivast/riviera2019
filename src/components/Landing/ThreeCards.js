@@ -16,6 +16,7 @@ class ThreeCards extends Component {
     render() {
         let settings = {
             dots: true,
+            dotsClass: "slick-dots",
             infinite: true,
             speed: 500,
             slidesToShow: 1,
