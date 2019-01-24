@@ -106,7 +106,7 @@ class CampusAmbassador extends Component{
                         </ul>
                     </div>
                 </div>
-                <SmallFooter />
+                {/* <SmallFooter /> */}
             </div>
         );
     }
