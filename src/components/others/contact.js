@@ -4,7 +4,6 @@ import Menu from "../Menu";
 import Image from './../../images/sports.jpg';
 import ContactCard from './common/ContactCard';
 import {Grid} from '@material-ui/core';
-import SmallFooter from './common/smallFooter';
 import './styles/contact.css';
 
 let contacts1 = [
@@ -86,9 +85,11 @@ const Contact = () => {
                         </Grid>)
                     }
                     </div>
+                    
                 </Grid>
+                <br /><br />
                 {/* <Footer /> */}
-            <SmallFooter />
+            {/* <SmallFooter /> */}
         </div>
     );
 }

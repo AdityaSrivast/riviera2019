@@ -397,7 +397,7 @@ class Sports extends React.Component {
                         }
                     </Grid>
                 </div><br /><br />
-                <SmallFooter />
+                {/* <SmallFooter /> */}
             </div>
         );
     }

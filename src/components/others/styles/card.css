@@ -41,6 +41,12 @@
     display: inline-block;
     /* white-space:nowrap */
 }
+@media only screen and (max-width:600px){
+    .card-content {
+        height: unset;
+        min-height: 200px;
+    }
+}
 .card-eventname {
     font-weight: bold;
 }

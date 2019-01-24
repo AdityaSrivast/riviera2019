@@ -1,0 +1,9 @@
+.team-wrapper{
+    text-align: center;
+    color: #333;
+    font-weight: bold;
+}
+.teamcard-wrapper img{
+    width: 200px;
+    height: auto;
+}
