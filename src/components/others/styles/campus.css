@@ -126,10 +126,17 @@ tbody{
 }
 
 @media only screen and (max-width:600px) {
-    .duties-list {
-        margin-left: -20px;
+    .duties:hover {
+        margin-left: 0 !important;
     }
 
+    .duties{
+        padding: 10px;
+    }
+
+    .campus{
+        width: 85%;
+    }
     th,
     td,
     tr {
