@@ -2,10 +2,12 @@ html {
     overflow: scroll;
     overflow-x: hidden;
 }
+
 ::-webkit-scrollbar {
     width: 0px;
-    background: transparent;  
+    background: transparent;
 }
+
 ::-webkit-scrollbar-thumb {
     background: transparent;
 }
@@ -16,7 +18,7 @@ html {
     background-size: contain;
 }
 
-.college-buttons{
+.college-buttons {
     width: 100%;
     display: flex;
     /* justify-self: center; */
@@ -25,11 +27,11 @@ html {
     margin-top: 25px;
 }
 
-.campus-grid{
+.campus-grid {
     text-align: center;
 }
 
-.collegeBtn{
+.collegeBtn {
     width: 100%;
     color: #ef9a9a  !important;
     border-color: #811c1b !important;
@@ -37,21 +39,21 @@ html {
     /* height: 75px; */
 }
 
-.collegeBtn span{
+.collegeBtn span {
     font-size: 1rem;
 }
 
-.activeBtn{
+.activeBtn {
     background-color: #811c1b !important;
     color: white !important;
 }
 
-.collegeBtn:hover{
+.collegeBtn:hover {
     background-color: #811c1b !important;
     color: white !important;
 }
 
-.campus{
+.campus {
     width: 70%;
     margin-right: auto;
     margin-left: auto;
@@ -59,18 +61,20 @@ html {
     color: white !important;
 }
 
-.registration-table{
+.registration-table {
     overflow: auto;
 }
 
-th,td,tr{
+th,
+td,
+tr {
     font-size: 1rem !important;
     color: white !important;
     opacity: 1;
     text-align: center !important;
 }
 
-td{
+td {
     border-right: 1px solid rgba(224, 224, 224, 1) !important;
     border-left: 1px solid rgba(224, 224, 224, 1) !important;
     padding: 0 5px !important;
@@ -87,15 +91,30 @@ tbody{
     position: relative;
 } */
 
-.no-border{
+.no-border {
     border-bottom: none !important;
 }
 
-.duties{
+.duties {
+    border: 1px solid black;
+    border-radius: 10px;
     margin-top: 8em;
+    background-color: #811c1b;
+    -webkit-box-shadow: 6px 7px 48px 8px rgba(0, 0, 0, 0.8);
+    -moz-box-shadow: 6px 7px 48px 8px rgba(0, 0, 0, 0.8);
+    box-shadow: 6px 7px 48px 8px rgba(0, 0, 0, 0.8);
+    cursor: pointer;
+    transition: all 0.5s; 
 }
 
-.duties-list{
+.duties:hover{
+    -webkit-box-shadow: 3px 7px 20px -1px rgba(0,0,0,0.8);
+    -moz-box-shadow: 3px 7px 20px -1px rgba(0,0,0,0.8);
+    box-shadow: 3px 7px 20px -1px rgba(0,0,0,0.8);
+    margin-left: 10px;
+}
+
+.duties-list {
     text-align: left;
     padding: 15px 5%;
     font-size: 20px;
@@ -106,12 +125,14 @@ tbody{
     padding-bottom: 1.5em;
 }
 
-@media only screen and (max-width:600px){
-    .duties-list{
+@media only screen and (max-width:600px) {
+    .duties-list {
         margin-left: -20px;
     }
 
-    th,td,tr{
+    th,
+    td,
+    tr {
         font-size: 0.8rem !important;
 
     }

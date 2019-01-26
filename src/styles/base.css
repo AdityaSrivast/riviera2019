@@ -95,6 +95,19 @@ html {
     right: 38px;
     bottom: 35px;
 }
+
+.iso-logo{
+    position: relative;
+    left: -30px;
+    top: 90px;
+}
+
+.vit-logo{
+    position: relative;
+    left: 0;
+    top: 90px;
+}
+
 /* MEDIA QUERY */
 @media only screen and (max-width:600px){
     .riviera-logo .main-riviera-logo{
@@ -258,11 +271,12 @@ html {
     font-weight: bold;
     position: relative;
     bottom: 20px;
-    left: 100px;
+    left: -35px;
+    font-size: 1.3rem;
 }
 @media only screen and (max-width: 600px) {
     .landing-date{
-        left: 35px;
+        left: -15px;
         bottom: 16px;
     }
 }

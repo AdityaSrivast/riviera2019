@@ -2,7 +2,9 @@ import React, { Component } from 'react';
 import renderHTML from 'react-render-html';
 
 import Logo from './../../images/rivieralogowhiteShadow.svg';
-import LandingText from '../..//images/landingText.svg';
+import LandingText from '../../images/landingText.svg';
+import ISOLogo from "../../images/iso.png";
+import VITWhite from "../../images/vit-white.png";
 
 
 class Landing extends Component {
@@ -58,6 +60,7 @@ class Landing extends Component {
                         <img src={LandingText} alt="tagline" className="tagline-logo" />
                         <span className="landing-date">14th-17th FEBRUARY</span>
                     </div>
+                    
                     <div>
                         <div className="countdown">
                             <div className="coming-in">Coming In</div>
