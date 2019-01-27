@@ -1,6 +1,5 @@
 import React from 'react';
 import { Grid } from '@material-ui/core';
-
 import Menu from './../Menu';
 import Header from './common/header';
 import events from './../../images/event-main.jpg';
