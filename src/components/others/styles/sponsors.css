@@ -1,0 +1,34 @@
+.sponsors-wrapper{
+    background: url('./../../../images/page2.png');
+    background-color: #1d1d1d;
+    background-size: contain;
+    text-align: center;
+}
+
+
+.title-sponsor{
+    font-size: 35px;
+}
+
+.other-sponsor{
+    text-align: center;
+    font-size: 35px;
+}
+
+.other-logo{
+    width: 50%;
+}
+
+.other-spn p{
+    font-size: 1.5em;
+}
+
+.co-logo{
+    width: 10%;
+}
+
+@media only screen and (max-width: 800px){
+    .co-logo {
+        width: 50%;
+    }
+}
