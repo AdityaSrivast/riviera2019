@@ -12,7 +12,7 @@ class Infusion extends Component {
         return (
             <div className="infusion-wrapper">
                 <Menu />
-                <Header title="INFUSION" image={Image} />
+                <Header title="INFUSION" image={Image} position="bottom" />
                 <div className="infusion-text-wrapper">
                     <br /><br />
                     <h1 className="under">Infusion</h1>
@@ -33,7 +33,7 @@ class Infusion extends Component {
                         Welcome to a melding of the cultures and hearts. Welcome, to <b>Infusion 2k19</b>.
                     </p>
                     <br />
-                    <h1 className="under">Desh main Videsh: </h1>
+                    <h1 className="under">Desh Main Videsh </h1>
                         <p>Behold, the ultimate Cultural Carnival! </p>
                         <p>
                             This Riviera, we bring to you,  Desh main Videsh,  an educational and entertaining 
