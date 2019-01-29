@@ -9,6 +9,7 @@ import Proshows from './components/others/proshows';
 import Team from './components/others/team';
 import Sponsors from './components/others/sponsors';
 import Contact from './components/others/contact';
+import Infusion from './components/others/Infuison';
 
 import ComingSoon from './components/others/common/ComingSoon';
 
@@ -27,10 +28,10 @@ class App extends Component {
 						<Route exact path="/sports" component={Sports}/>
 						<Route exact path="/proshows" component={Proshows}/>
 						<Route exact path="/campus" component={CampusAmbassador}/>
-						<Route exact path="/team" component={ComingSoon}/>
+						<Route exact path="/team" component={Team}/>
 						<Route exact path="/sponsors" component={Sponsors}/>
 						<Route exact path="/contact" component={Contact}/>
-                        <Route exact path="/team2" component={Team}/>
+                        <Route exact path="/infusion" component={Infusion}/>
 					</Switch>
 				</BrowserRouter>
       		</div>

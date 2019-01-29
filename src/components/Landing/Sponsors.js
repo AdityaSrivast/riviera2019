@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Grid from '@material-ui/core/Grid';
-
+import { NavLink } from 'react-router-dom';
 
 import './../css/Sponsors.css';
 import Pepsi from './../../images/pepsi.png';
@@ -55,7 +55,7 @@ class Sponsors extends Component {
                     </div> */}
                     <br /><br />
                     <div className="tac">
-                        <button className="c-btn spon-btn">More Sponsors</button>
+                        <NavLink to="/sponsors"><button className="c-btn spon-btn">More Sponsors</button></NavLink>
                     </div>
                 </div>
 

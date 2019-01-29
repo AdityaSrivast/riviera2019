@@ -307,3 +307,10 @@ html {
     background: #f2f2f2;
     color: #1d1d1d;
 }
+
+.under {
+    -webkit-text-decoration: #801B1B solid underline;
+    text-decoration: #801B1B solid underline;
+    -webkit-text-underline-position: under;
+    text-underline-position: under;
+  }

@@ -8,11 +8,9 @@ class TeamCard extends React.Component {
         }
     }
     team_hovered = () => {
-        console.log("hovered");
         this.setState({ hovered: true });
     }
     team_unhovered = () => {
-        console.log("unhoveres");
         this.setState({ hovered: false });
     }
     render() {
