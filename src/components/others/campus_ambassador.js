@@ -83,7 +83,7 @@ class CampusAmbassador extends Component{
                         })()}
                     </div> <br/> <br/>
                     <div className="duties">
-                        <h2>DUTIES OF CAMPUS AMBASSADOR</h2>
+                        <h1>DUTIES OF CAMPUS AMBASSADOR</h1>
                         <ul className="duties-list">
                             <li>Campus ambassadors are to act as the link between the Riviera Team and the concerned college administration and facilitate student communication</li>
                             <li>Be updated with Riviera’19 happenings</li>
@@ -95,7 +95,7 @@ class CampusAmbassador extends Component{
                     <br/>
 
                     <div className="duties">
-                        <h2>TERMS AND CONDITIONS</h2>
+                        <h1>TERMS AND CONDITIONS</h1>
                         <ul className="duties-list">
                             <li>Only 1 campus ambassador per college is permitted.</li>
                             <li>The final decision of allotting the zone and category rests with the Riviera’19 team.</li>

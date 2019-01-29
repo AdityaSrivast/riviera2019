@@ -25,10 +25,10 @@ class App extends Component {
 						<Route exact path="/home" render={() => <Redirect to="/"/>} />
 						<Route exact path="/events" component={Events} />
 						<Route exact path="/sports" component={Sports}/>
-						<Route exact path="/proshows" component={ComingSoon}/>
+						<Route exact path="/proshows" component={Proshows}/>
 						<Route exact path="/campus" component={CampusAmbassador}/>
 						<Route exact path="/team" component={ComingSoon}/>
-						<Route exact path="/sponsors" component={ComingSoon}/>
+						<Route exact path="/sponsors" component={Sponsors}/>
 						<Route exact path="/contact" component={Contact}/>
                         <Route exact path="/team2" component={Proshows}/>
 					</Switch>

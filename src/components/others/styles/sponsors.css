@@ -1,0 +1,47 @@
+.sponsors-wrapper{
+    background: url('./../../../images/page2.png');
+    background-color: #1d1d1d;
+    background-size: contain;
+    text-align: center;
+}
+
+
+.title-sponsor{
+    font-size: 35px;
+}
+
+.other-sponsor{
+    text-align: center;
+    font-size: 35px;
+    margin-top: 8%;
+}
+
+.other-logo{
+    width: 50%;
+}
+
+.food-logo{
+    width: 40%;
+}
+
+.other-spn p{
+    font-size: 1.5em;
+}
+
+.co-logo{
+    width: 10%;
+}
+
+.baskin{
+    margin-top: 3em;
+}
+
+@media only screen and (max-width: 800px){
+    .co-logo {
+        width: 50%;
+    }
+
+    .food-logo{
+        margin-top: 2.5em;
+    }
+}

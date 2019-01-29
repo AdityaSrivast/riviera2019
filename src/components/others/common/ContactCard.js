@@ -4,7 +4,7 @@ import '../styles/card.css';
 
 const ContactCard = props => {
     return(
-        <div className="card-wrapper" style={{background: "none"}}>
+        <div className="card-wrapper contact-card-wrapper" style={{background: "none"}}>
             <div className="card-container">
                 <p className="card-depname">{props.dep}</p>
                 <p className="card-name">{props.name1}</p>
