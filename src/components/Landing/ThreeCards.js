@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Button, Grid } from '@material-ui/core';
+import { Grid } from '@material-ui/core';
 
 import './../css/ThreeCard.css';
 import "slick-carousel/slick/slick.css";

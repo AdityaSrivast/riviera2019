@@ -294,7 +294,7 @@ class Sports extends React.Component {
         for (let i in preriviera_sports) {
             let curr = moment(preriviera_sports[i]['date']).format('MMMM Do');
             let newState=preriviera_sports[i];
-            if(curr!='Invalid date'){
+            if(curr!=='Invalid date'){
                 newState={
                     ...newState,
                     date: curr
@@ -306,7 +306,7 @@ class Sports extends React.Component {
         for (let i in riviera_sports) {
             let curr = moment(riviera_sports[i]['date']).format('MMMM Do');
             let newState=riviera_sports[i];
-            if(curr!='Invalid date'){
+            if(curr!=='Invalid date'){
                 newState={
                     ...newState,
                     date: curr
@@ -337,7 +337,7 @@ class Sports extends React.Component {
 
     filterCategory = (e) => {
         console.log(e.target.value);
-        if(e.target.value.toLowerCase().search('pre-riviera')==-1){
+        if(e.target.value.toLowerCase().search('pre-riviera')===-1){
             this.setState({
                 sports:this.state.riviera_sports,
                 category: e.target.value
@@ -397,7 +397,7 @@ class Sports extends React.Component {
                         }
                     </Grid>
                 </div><br /><br />
-                {/* <SmallFooter /> */}
+                <SmallFooter />
             </div>
         );
     }

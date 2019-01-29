@@ -1,4 +1,4 @@
-.small-footer{
+/* .small-footer{
     width: 100%;
     margin-top: 30px;
     height: 40px;
@@ -9,4 +9,15 @@
     color: white;
     justify-content: center;
     align-items: center;
+} */
+.small-footer{
+    text-align: center;
+    margin-top: 20px;
+    background: rgb(41, 40, 40);
+    color: white;
+    /* position: absolute; */
+    /* bottom: 0; */
+    padding: 4px 0;
+    width: 100%;
+    font-size: 15px;
 }

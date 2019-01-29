@@ -4,9 +4,6 @@ import Grid from '@material-ui/core/Grid';
 
 import './../css/Sponsors.css';
 import Pepsi from './../../images/pepsi.png';
-import Maruti from './../../images/maruti.jpg';
-import Gluco from './../../images/tata-gluco-plus.png';
-import Oneplus from './../../images/oneplus.png';
 import PaytmLogo from './../../images/Paytm_logo.png';
 
 

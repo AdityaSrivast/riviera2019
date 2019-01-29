@@ -1,5 +1,5 @@
 import React from 'react';
-import {Table, TableHead, TableBody, TableRow, TableCell, Paper } from '@material-ui/core';
+import {Table, TableHead, TableBody, TableRow, TableCell } from '@material-ui/core';
 import PropTypes from "prop-types";
 import { withStyles } from "@material-ui/core/styles";
 
@@ -21,7 +21,6 @@ const styles= theme =>({
 });
 
 const CommonTableRows = props =>{
-    const classes={props};
     return(
         <Table className="data-table">
             <TableHead>

@@ -9,7 +9,6 @@ import About from './About';
 import ThreeCards from './ThreeCards';
 import Menu from '../Menu';
 
-import ComingSoon from "./comingSoon";
 
 const styles = {
 	list: {

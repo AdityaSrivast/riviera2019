@@ -4,6 +4,7 @@ import Menu from './../Menu';
 import Header from './common/header';
 
 import CommonTableRows from './common/tableRows';
+import SmallFooter from './common/smallFooter';
 
 
 
@@ -31,7 +32,7 @@ class CampusAmbassador extends Component{
     }
 
     isActive(id){
-        if(this.state.activeRegion==id){
+        if(this.state.activeRegion===id){
             return 'activeBtn';
         }
         return '';
@@ -48,7 +49,7 @@ class CampusAmbassador extends Component{
                         <div className="college-buttons">
                             {
                                 Object.keys(colleges).map((college,i)=>
-                                    <Grid item md={3} sm={12} xs={12} className="campus-grid" style={{margin: '20px 10px'}}>
+                                    <Grid item md={3} sm={12} key={i}  xs={12} className="campus-grid" style={{margin: '20px 10px'}}>
                                             <Button 
                                             key={i} 
                                             variant="outlined" 
@@ -66,11 +67,11 @@ class CampusAmbassador extends Component{
                     </Grid>
                     <div className="registration-table">
                         {(()=>{
-                            if(activeRegion==0){
+                            if(activeRegion===0){
                                 return (
                                     <CommonTableRows gold1={35} gold2={50} diamond1={51} diamond2={75} />
                                 )
-                            } else if(activeRegion==1){
+                            } else if(activeRegion===1){
                                 return (
                                     <CommonTableRows gold1={20} gold2={30} diamond1={31} diamond2={50} />
                                 )
@@ -106,7 +107,7 @@ class CampusAmbassador extends Component{
                         </ul>
                     </div>
                 </div>
-                {/* <SmallFooter /> */}
+                <SmallFooter  />
             </div>
         );
     }

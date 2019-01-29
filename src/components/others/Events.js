@@ -125,7 +125,7 @@ class Events extends Component {
                     }
                 </div>
                 <br /><br />
-                {/* <SmallFooter /> */}
+                <SmallFooter />
             </div>
         );
     }

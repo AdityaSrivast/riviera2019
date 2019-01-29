@@ -3,8 +3,6 @@ import renderHTML from 'react-render-html';
 
 import Logo from './../../images/rivieralogowhiteShadow.svg';
 import LandingText from '../../images/landingText.svg';
-import ISOLogo from "../../images/iso.png";
-import VITWhite from "../../images/vit-white.png";
 
 
 class Landing extends Component {

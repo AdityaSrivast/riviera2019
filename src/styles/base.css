@@ -43,7 +43,8 @@ body{
     padding: 0;
     overflow-x: hidden;
     font-family: 'Quicksand';
-    /* background: #1d1d1d; */
+    background: #1d1d1d;
+    
 }
 html {
     height: 100%;
