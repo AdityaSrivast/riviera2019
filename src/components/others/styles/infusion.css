@@ -2,5 +2,22 @@
     width: 80%;
     margin: 0 auto;
     color: #f2f2f2;
+}
+.infusion-slider{
+    height: unset;
+}
+.infusion-slider .slick-list{
+    height: 350px;
+}
+.infusion-text-wrapper .under{
     text-align: center;
+}
+.infusion-slider img{
+    height: -webkit-fill-available;
+    width: 100%;
+}
+@media only screen and (max-width: 700){
+    .hide-on-small{
+        display: none !important;
+    }
 }
