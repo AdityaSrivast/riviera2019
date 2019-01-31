@@ -31,9 +31,14 @@ class Infusion extends Component {
         return (
             <div className="infusion-wrapper">
                 <Menu />
+                <div className="nav-buttons-wrapper" style={{ zIndex: 2 }}>
+                    <a href="https://tinyurl.com/infusion2019" target="_blank" rel="noopener noreferrer">
+                        <button className="nav-button">Register</button>
+                    </a>
+                </div>
                 {
                     this.state.is_mobile &&
-                    <Header title="INFUSION" image={Image1} position="bottom" />
+                    <Header title="INFUSION" image={Image1} position="bottom" regLink="https://tinyurl.com/infusion2019"  />
                 }
                 {
                     !this.state.is_mobile &&
@@ -94,6 +99,15 @@ class Infusion extends Component {
                     <p>Don’t miss out on this fun filled event where nations gather within The Nation, Desh main
                         Videsh.
                         </p>
+                    <br /><br />
+                    <h2 className="under">Contact Details </h2>
+                    <p>
+                        <p>Apoorv Lunawat - +919033629119</p>
+                        
+                        <p>Manu Gangrade -+919003719914</p>
+                        
+                        <p>mail : international.riviera@vit.ac.in</p>
+                    </p>
                     <br /><br />
                 </div>
                 <SmallFooter />

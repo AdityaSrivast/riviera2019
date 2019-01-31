@@ -10,7 +10,7 @@
     height: 350px;
 }
 .infusion-text-wrapper .under{
-    text-align: center;
+    text-align: justify;
 }
 .infusion-slider img{
     height: -webkit-fill-available;
