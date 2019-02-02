@@ -3,6 +3,7 @@ import renderHTML from 'react-render-html';
 
 import Logo from './../../images/rivieralogowhiteShadow.svg';
 import LandingText from '../../images/landingText.svg';
+import '../css/comingSoon.css';
 
 
 class Landing extends Component {

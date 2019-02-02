@@ -14,6 +14,7 @@ import Dominos from '../../images/dominos.png';
 import Dosart from '../../images/dosart.png';
 import Flo from '../../images/flo.png';
 import Baskin from '../../images/baskins.png';
+import Mercedes from '../../images/mercedes.png';
 import Kwality from '../../images/kwalitywall.png';
 import Lassi from '../../images/lassi-shop.png';
 import Marry from '../../images/marrybrown.png';
@@ -36,6 +37,12 @@ const Sponsors = () => {
 					<Grid item md={12} xs={12} className="">
 						<p className="title-sponsor">Co-Sponsor</p>
 						<img src={Paytm} alt="pepsi" className="co-logo" />
+					</Grid>
+				</Grid>
+				<Grid container>
+					<Grid item md={12} xs={12} className="">
+						<p className="title-sponsor">Automotive Partner</p>
+						<img src={Mercedes} alt="pepsi" className="merc-logo" />
 					</Grid>
 				</Grid>
 				<br />

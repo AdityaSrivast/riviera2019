@@ -21,7 +21,8 @@ const ContactCard = props => {
                 <br />
                 <span className="card-email">
                     <FontAwesome name="envelope" />
-                    <span style={{marginLeft:'5px'}}>{props.email}</span>
+                    <span style={{marginLeft:'5px'}}>{props.email}</span> <br/> <br />
+                    <span style={{marginLeft:'5px'}}>{props.email2}</span>
                 </span>
             </div>
         </div>

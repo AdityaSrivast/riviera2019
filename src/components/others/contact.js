@@ -41,7 +41,7 @@ let contacts2 =[
         contact1: "9445870295",
         name2: "Ballasani Smrithi",
         contact2: "9003728789",
-        email: "gc.riviera1@vit.ac.in"
+        email: "gc.riviera@vit.ac.in"
     },
     {
         dep: "Sponsorship & Stalls",
@@ -49,7 +49,8 @@ let contacts2 =[
         contact1: "9985527882",
         name2: "Shivam Kumar Singh",
         contact2: "6374830459",
-        email: "stalls.riviera@vit.ac.in"
+        email: "stalls.riviera@vit.ac.in",
+        email2: "sponsorship.riviera@vit.ac.in"
     }
 ];
 
@@ -82,7 +83,8 @@ const Contact = () => {
                             name2={contact.name2} 
                             contact1={contact.contact1} 
                             contact2={contact.contact2}
-                            email={contact.email}  />
+                            email={contact.email}
+                            email2 ={contact.email2}  />
                         </Grid>)
                     }
                     </div>

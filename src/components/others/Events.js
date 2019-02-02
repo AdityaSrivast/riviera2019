@@ -26,7 +26,7 @@ class Events extends Component {
             query: '',
             loading: true,
             events: [],
-            categories : ['Premium', 'Pre Riviera', 'Drama Art and Photography', 'Music', 'Dance', 'Workshop', 'Quiz', 'Words Worth English', 'Words Worth Tamil', 'Words Worth Hindi', 'Words Worth Telugu', 'Adventure Sports', 'Cyber Engage', 'Informal']
+            categories : ['All','Premium', 'Pre Riviera', 'Drama Art and Photography', 'Music', 'Dance', 'Workshop', 'Quiz', 'Words Worth English', 'Words Worth Tamil', 'Words Worth Hindi', 'Words Worth Telugu', 'Adventure Sports', 'Cyber Engage', 'Informal']
         }
         this.getEvents();
     }
@@ -62,12 +62,22 @@ class Events extends Component {
         this.setState({ events: updatedList });
     }
     filterCategory = (e) => {
-        axios.get(`${BASE_URL}/all?category=${e.target.value.toLowerCase()}`).then(resp => {
-            console.log(resp);
-            this.setState({ events : resp.data.info });
-        }).catch(err => {
-            console.log(err);
-        })
+        let val=e.target.value.toLowerCase();
+        if (val!="all"){
+            axios.get(`${BASE_URL}/all?category=${val}`).then(resp => {
+                console.log(resp);
+                this.setState({ events : resp.data.info });
+            }).catch(err => {
+                console.log(err);
+            })
+        } else{
+            axios.get(`${BASE_URL}/all`).then(resp => {
+                console.log(resp);
+                this.setState({ events : resp.data.info });
+            }).catch(err => {
+                console.log(err);
+            })
+        }
     }
 
     render() {

@@ -21,11 +21,15 @@
 }
 
 .food-logo{
-    width: 40%;
+    width: 35%;
 }
 
 .other-spn p{
     font-size: 1.5em;
+}
+
+.merc-logo{
+    width: 18%;
 }
 
 .co-logo{
@@ -43,5 +47,9 @@
 
     .food-logo{
         margin-top: 2.5em;
+    }
+
+    .merc-logo{
+        width: 60%;
     }
 }
