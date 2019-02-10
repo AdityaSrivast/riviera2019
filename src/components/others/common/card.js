@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import '../styles/card.css';
-import { throws } from 'assert';
+import { withRouter } from 'react-router-dom';
 
 class Card extends Component{
     constructor(props){
@@ -9,11 +9,12 @@ class Card extends Component{
             hovered: false
         };
         this.handleHover=this.handleHover.bind(this);
+        this.handleClick=this.handleClick.bind(this);
     }
 
     isActive(){
         if(this.state.hovered){
-            return 'hovered-scroll'
+            return 'hovered-scroll';
         }
         return '';
     }
@@ -24,9 +25,16 @@ class Card extends Component{
         })
     }
 
+    handleClick(){
+        this.props.history.push(`events/result?name=${this.props.event}`);
+    }
+
     render() {
         return(
-            <div className="card-wrapper" onMouseEnter={this.handleHover} onMouseLeave={this.handleHover}>
+            <div className="card-wrapper" 
+            onMouseEnter={this.handleHover} 
+            onMouseLeave={this.handleHover}
+            onClick={this.handleClick}>
                 <div className="card-container">
                     <p className="card-clubname">{this.props.club}</p>
                     <p className="card-eventname">{this.props.event}</p>
@@ -43,4 +51,4 @@ class Card extends Component{
     }
 }
 
-export default Card;
+export default withRouter(Card);

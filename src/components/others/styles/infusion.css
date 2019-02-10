@@ -10,6 +10,10 @@
 .infusion-slider .slick-list{
     height: 350px;
 }
+
+.infusion-slider .slick-active{
+    /* width: 100% !important; */
+}
 .infusion-text-wrapper .under{
     text-align: center;
 }

@@ -18,6 +18,8 @@ import Mercedes from '../../images/mercedes.png';
 import Kwality from '../../images/kwalitywall.png';
 import Lassi from '../../images/lassi-shop.png';
 import Marry from '../../images/marrybrown.png';
+import Zebronics from '../../images/zebronics.png';
+import Zebronics from '../../images/educationTree.png';
 import './styles/sponsors.css';
 
 const Sponsors = () => {

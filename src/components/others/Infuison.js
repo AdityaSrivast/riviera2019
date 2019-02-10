@@ -4,10 +4,6 @@ import Slider from "react-slick";
 import Header from './common/header';
 import Menu from "../Menu";
 import SmallFooter from './common/smallFooter';
-import Image1 from './../../images/inf-1.jpg';
-import Image2 from './../../images/inf-2.jpg';
-import Image3 from './../../images/inf-3.jpg';
-import Image4 from './../../images/inf-4.jpg';
 
 import './styles/infusion.css';
 
@@ -28,6 +24,9 @@ class Infusion extends Component {
             slidesToShow: 1,
             slidesToScroll: 1
         };
+
+        let {img1, img2, img3, img4} = this.props;
+
         return (
             <div className="infusion-wrapper">
                 <Menu />
@@ -38,22 +37,22 @@ class Infusion extends Component {
                 </div>
                 {
                     this.state.is_mobile &&
-                    <Header title="INFUSION" image={Image1} position="bottom" regLink="https://tinyurl.com/infusion2019"  />
+                    <Header title="INFUSION" image={img1} position="bottom" regLink="https://tinyurl.com/infusion2019"  />
                 }
                 {
                     !this.state.is_mobile &&
                     <Slider {...settings} className="infusion-slider hide-on-small" >
                         <div>
-                            <img src={Image2} alt="infusion1" />
+                            <img src={img1} alt="infusion1" />
                         </div>
                         <div>
-                            <img src={Image1} alt="infusion1" />
+                            <img src={img2} alt="infusion1" />
                         </div>
                         <div>
-                            <img src={Image3} alt="infusion1" />
+                            <img src={img3} alt="infusion1" />
                         </div>
                         <div>
-                            <img src={Image4} alt="infusion1" />
+                            <img src={img4} alt="infusion1" />
                         </div>
                         {/* <div>
                         <img src={Image5} alt="infusion1" />
