@@ -1,5 +1,5 @@
 .single-event-section{
-    width: 60%;
+    width: 70%;
     height: 60%;
     margin: 8% auto;
     color: white;
@@ -23,8 +23,54 @@
 
 .single-main{
     border-right: 1px solid white;
+    padding: 20px;
 }
 
 .single-event-desc{
     width: 80%;
+}
+
+.single-event-list{
+    padding-left: 0 !important;
+}
+
+.register-btn{
+    text-align: center;
+    height: 4em;
+}
+
+.single-event-prize{
+    font-weight: 700;
+    margin-top: 0 !important;
+}
+
+.single-event-li{
+    border-top: 1px solid white;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    height: 5em;
+    position: relative;
+}
+
+
+.single-event-li p:first-of-type{
+    color: #ffa0a0;
+    font-weight: 700;
+    font-size: 18px;
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    margin: 0 !important;
+}
+
+.single-event-li p:nth-child(2){
+    font-weight: 700;
+    font-size: 15px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px;
+    margin: 0 !important;
 }

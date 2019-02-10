@@ -34,11 +34,11 @@ class Fullpage extends Component {
             <div className={classes.list}>
                 <List>
                     {['HOME', 'EVENTS', 'SPORTS', 'PROSHOWS', 'TEAM RIVIERA','CAMPUS AMBASSADOR', 'SPONSORS & PARTNERS','INFUSION', 'CONTACT'].map((text, index) => (
-                        <NavLink to={text.split(' ')[0].toLowerCase()} className="navlink-btn">
+                        <a href={`http://${window.location.host}/${text.split(' ')[0].toLowerCase()}`} className="navlink-btn">
                             <ListItem button key={text}>
                                 <ListItemText primary={text} />
                             </ListItem>
-                        </NavLink>
+                        </a>
                     ))}
                 </List>
             </div>

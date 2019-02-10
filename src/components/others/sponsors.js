@@ -19,7 +19,8 @@ import Kwality from '../../images/kwalitywall.png';
 import Lassi from '../../images/lassi-shop.png';
 import Marry from '../../images/marrybrown.png';
 import Zebronics from '../../images/zebronics.png';
-import Zebronics from '../../images/educationTree.png';
+import Studio11 from '../../images/studio11.jpg';
+import EducationTree from '../../images/educationTree.png';
 import './styles/sponsors.css';
 
 const Sponsors = () => {
@@ -41,12 +42,6 @@ const Sponsors = () => {
 						<img src={Paytm} alt="pepsi" className="co-logo" />
 					</Grid>
 				</Grid>
-				<Grid container>
-					<Grid item md={12} xs={12} className="">
-						<p className="title-sponsor">Automotive Partner</p>
-						<img src={Mercedes} alt="pepsi" className="merc-logo" />
-					</Grid>
-				</Grid>
 				<br />
 				<br />
 				<p className="other-sponsor">Other Sponsors</p>
@@ -66,6 +61,25 @@ const Sponsors = () => {
 					<Grid item md={3} xs={12} className="other-spn">
 						<img src={OhCampus} alt="pepsi" className="other-logo" />
 						<p>Online Media Partner</p>
+					</Grid>
+				</Grid>
+				<br />
+				<Grid container>
+					<Grid item md={3} xs={12} className="other-spn">
+						<img src={Mercedes} alt="pepsi" className="other-logo" />
+						<p>Automotive Partner</p>
+					</Grid>
+					<Grid item md={3} xs={12} className="other-spn">
+						<img src={Zebronics} alt="pepsi" className="other-logo" />
+						<p>Music Partner</p>
+					</Grid>
+					<Grid item md={3} xs={12} className="other-spn">
+						<img src={EducationTree} style={{width: '40%'}} alt="pepsi" className="other-logo" />
+						<p>Online Media Partner</p>
+					</Grid>
+					<Grid item md={3} xs={12} className="other-spn">
+						<img src={Studio11} style={{width: '33%'}} alt="pepsi" className="other-logo" />
+						<p>Styling Partner</p>
 					</Grid>
 				</Grid>
 				<br />

@@ -34,7 +34,7 @@ class App extends Component {
 						<Route exact path="/sports" component={Sports}/>
 						<Route exact path="/proshows" component={Proshows}/>
 						<Route exact path="/campus" component={CampusAmbassador}/>
-						<Route exact path="/team" component={ComingSoon}/>
+						<Route exact path="/team" component={Team}/>
 						<Route exact path="/sponsors" component={Sponsors}/>
 						<Route exact path="/contact" component={Contact}/>
 						<Route exact path="/infusion" 

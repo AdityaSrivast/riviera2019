@@ -2,6 +2,8 @@
     text-align: center;
     color: #333;
     font-weight: bold;
+    width: 70%;
+    margin: 0 auto;
 }
 .team-wrapper h1{
     color: #c9c9c9;
