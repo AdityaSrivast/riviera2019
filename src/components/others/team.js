@@ -72,22 +72,19 @@ class Team extends React.Component {
                     <div className="co-patron-wrapper">
                         <h1 className="under">Our Co-Patron</h1><br />
                         <Grid container spacing={24}>
-                            <Grid item xs={12} md={4}>
+                            <Grid item xs={12} md={3}>
                                 <TeamCard imgSrc={sv} title="SANKAR Vishwanathan" designation="Vice President, VIT" />
                             </Grid>
-                            <Grid item xs={12} md={4}>
+                            <Grid item xs={12} md={3}>
                                 <TeamCard imgSrc={ShV} title="SEKAR Vishwanathan" designation="Vice President, VIT" />
                             </Grid>
-                            <Grid item xs={12} md={4}>
+                            <Grid item xs={12} md={3}>
                                 <TeamCard imgSrc={gvs} title="MR. G.V. SELVAM" designation="Vice President, VIT"  />
                             </Grid>
-                            <Grid item xs={12} md={4}>
+                            <Grid item xs={12} md={3}>
                                 <TeamCard imgSrc={AAS} title="DR. Anand A. Samuel" designation="vice chancellor, VIT" />
                             </Grid>
-                            <Grid item xs={12} md={4}>
-                                <TeamCard imgSrc={VR}  title="DR. V. Raju " designation="pro-vice chancellor, VIT"/>
-                            </Grid>
-                            <Grid item xs={12} md={4}>
+                            <Grid item xs={12} md={12}>
                                 <TeamCard imgSrc={SN}  title="DR. S. Narayanam" designation="pro-vice chancellor, VIT"/>
                             </Grid>
                         </Grid>

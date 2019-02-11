@@ -48,6 +48,7 @@
     border-top: 1px solid white;
     display: flex;
     flex-flow: row;
+    flex-wrap: wrap;
     justify-content: space-between;
     height: 5em;
     position: relative;
@@ -73,4 +74,28 @@
     transform: translateY(-50%);
     right: 10px;
     margin: 0 !important;
+}
+
+@media only screen and (max-width: 600px)
+{
+    .single-main{
+        border: 0px !important;
+    }
+
+    .single-event-desc{
+        width: 100%;
+    }
+
+    .single-event-li{
+        font-size: 1.2em;
+    }
+
+    .single-event-li p:first-of-type{
+        font-size: 15px;
+    }
+
+    .single-event-li p:nth-child(2){
+        font-size: 13px;
+    }
+
 }
