@@ -23,6 +23,25 @@ import seeni from './../../images/seenivas.jpg';
 import psm from './../../images/psm.jpg';
 import pscv from './../../images/pscv.jpg';
 
+import ag from './../../images/faculty/ag.JPG';
+import asl from './../../images/faculty/asl.jpg';
+import at from './../../images/faculty/at.jpg';
+import js from './../../images/faculty/js.jpeg';
+import mga from './../../images/faculty/mga.jpg';
+import msb from './../../images/faculty/msb.JPG';
+import nvr from './../../images/faculty/nvr.jpg';
+import nvt from './../../images/faculty/nvt.jpg';
+import prajeesh from './../../images/faculty/prajeesh.jpg';
+import pt from './../../images/faculty/pt.jpg';
+import rj from './../../images/faculty/rj.jpg';
+import rk from './../../images/faculty/rk.jpg';
+import sd from './../../images/faculty/sd.jpg';
+import sk from './../../images/faculty/sk.jpg';
+import sp from './../../images/faculty/sp.JPG';
+import uks from './../../images/faculty/uks.JPG';
+import vv from './../../images/faculty/vv.JPG';
+
+
 import abdul from './../../images/organizer/abdul.jpg';
 import abharika from './../../images/organizer/abharika.jpg';
 import abhikhya from './../../images/organizer/abhikhya.jpg';
@@ -98,6 +117,7 @@ class Team extends React.Component {
                         </Grid>
                     </div>
                     <br />
+                    <br/>
                     <div className="patron-wrapper">
                         <h1 className="under">Convenor</h1><br />
                         <TeamCard imgSrc={pss} title="Prof. Sasikumar S." designation="Convenor" />
@@ -126,7 +146,64 @@ class Team extends React.Component {
                         </Grid>
                     </div>
                     <br />
+                    <br/>
                     <div className="organizer-wrapper">
+                        <h1 className="under">Faculty Organizers</h1><br/>
+                        <Grid container className="co-wrapper" spacing={24}>
+                            <Grid item xs={12} md={3}>
+                                <TeamCard imgSrc={ag} title="Prof. Abdul Gaffar H" />
+                            </Grid>
+                            <Grid item xs={12} md={3}>
+                                <TeamCard imgSrc={asl} title="Prof. Aarthy S L" />
+                            </Grid>
+                            <Grid item xs={12} md={3}>
+                                <TeamCard imgSrc={at} title="Prof. Archana T" />
+                            </Grid>
+                            <Grid item xs={12} md={3}>
+                                <TeamCard imgSrc={js} title="Prof. Jayakumar S" />
+                            </Grid>
+                            <Grid item xs={12} md={3}>
+                                <TeamCard imgSrc={mga} title="Dr. Mangayarkarasi Arun P" />
+                            </Grid>
+                            <Grid item xs={12} md={3}>
+                                <TeamCard imgSrc={msb} title="Dr. M. Monica Subashini" />
+                            </Grid>
+                            <Grid item xs={12} md={3}>
+                                <TeamCard imgSrc={nvr} title="Prof. Naga Venkata Raghuram J" />
+                            </Grid>
+                            <Grid item xs={12} md={3}>
+                                <TeamCard imgSrc={nvt} title="Dr. N. V. Thiyagachanthan" />
+                            </Grid>
+                            <Grid item xs={12} md={3}>
+                                <TeamCard imgSrc={prajeesh} title="Prof. Prajeesh Tomy" />
+                            </Grid>
+                            <Grid item xs={12} md={3}>
+                                <TeamCard imgSrc={pt} title="Prof. Pradheep T" />
+                            </Grid>
+                            <Grid item xs={12} md={3}>
+                                <TeamCard imgSrc={rj} title="Prof. Raju J" />
+                            </Grid>
+                            <Grid item xs={12} md={3}>
+                                <TeamCard imgSrc={rk} title="Prof. Ravi K" />
+                            </Grid>
+                            <Grid item xs={12} md={3}>
+                                <TeamCard imgSrc={sd} title="Prof. Sivaprasad Darla" />
+                            </Grid>
+                            <Grid item xs={12} md={3}>
+                                <TeamCard imgSrc={sk} title="Prof. Sivasankaran K" />
+                            </Grid>
+                            <Grid item xs={12} md={3}>
+                                <TeamCard imgSrc={sp} title="Prof. Sasikumar P" />
+                            </Grid>
+                            <Grid item xs={12} md={3}>
+                                <TeamCard imgSrc={uks} title="Prof. Umadevi K S" />
+                            </Grid>
+                            <Grid item xs={12} md={3}>
+                                <TeamCard imgSrc={vv} title="Prof. Velmurugan V" />
+                            </Grid>
+                        </Grid>
+                        <br />
+                        <br/>
                         <h1 className="under">Student Organizers</h1><br />
                         <Grid container spacing={24}>
                             <Grid item xs={12} md={3}>
