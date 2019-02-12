@@ -30,6 +30,7 @@ class TeamCard extends React.Component {
                 >
                     <h3>{this.props.title}</h3>
                     <p>{this.props.designation}</p>
+                    <p>{this.props.campus}</p>
                 </div>
             </div>
         );

@@ -8,12 +8,14 @@ import SmallFooter from './common/smallFooter';
 
 import Organizer from './../../images/event-main.jpg';
 import gv from './../../images/gv.png';
-import sv from './../../images/ShankarV.png';
+import sv from './../../images/ShankarV.jpg';
 import gvs from './../../images/gvs.jpg';
-import SN from './../../images/SN.png';
-import VR from './../../images/VR.png';
-import AAS from './../../images/aas.png';
+import SN from './../../images/SN.jpg';
+import AAS from './../../images/aas.jpg';
 import ShV from './../../images/shekharv.jpg';
+import spr from './../../images/spr.jpg';
+import ksn from './../../images/ksn.jpg';
+
 import pss from './../../images/pss.jpg';
 import ram from './../../images/rameshn.jpg';
 import sharmila from './../../images/sharmila.jpg';
@@ -67,25 +69,31 @@ class Team extends React.Component {
                     <br /><br />
                     <div className="patron-wrapper">
                         <h1 className="under">Patron</h1><br />
-                        <TeamCard imgSrc={gv} title="DR. G. Vishwanathan" designation="chancellor & founder VIT" />
+                        <TeamCard imgSrc={gv} title="Dr. G. Viswanathan" designation="Chancellor & Founder" campus="VIT" />
                     </div>
                     <div className="co-patron-wrapper">
                         <h1 className="under">Our Co-Patron</h1><br />
-                        <Grid container spacing={24}>
+                        <Grid container spacing={24} className="co-wrapper">
                             <Grid item xs={12} md={3}>
-                                <TeamCard imgSrc={sv} title="SANKAR Vishwanathan" designation="Vice President, VIT" />
+                                <TeamCard imgSrc={sv} title="Mr. Sankar Viswanathan" designation="Vice President" campus="VIT(AP Campus)" />
                             </Grid>
                             <Grid item xs={12} md={3}>
-                                <TeamCard imgSrc={ShV} title="SEKAR Vishwanathan" designation="Vice President, VIT" />
+                                <TeamCard imgSrc={ShV} title="Dr. Sekar Viswanathan" designation="Vice President" campus="VIT(Vellore Campus)" />
                             </Grid>
                             <Grid item xs={12} md={3}>
-                                <TeamCard imgSrc={gvs} title="MR. G.V. SELVAM" designation="Vice President, VIT"  />
+                                <TeamCard imgSrc={gvs} title="Mr. G.V. Selvam" designation="Vice President" campus="VIT(Chennai Campus)"  />
                             </Grid>
                             <Grid item xs={12} md={3}>
-                                <TeamCard imgSrc={AAS} title="DR. Anand A. Samuel" designation="vice chancellor, VIT" />
+                                <TeamCard imgSrc={AAS} title="Dr. Anand A. Samuel" designation="Vice Chancellor" campus="VIT" />
                             </Grid>
-                            <Grid item xs={12} md={12}>
-                                <TeamCard imgSrc={SN}  title="DR. S. Narayanam" designation="pro-vice chancellor, VIT"/>
+                            <Grid item xs={12} md={3}>
+                                <TeamCard imgSrc={SN}  title="Dr. S. Narayanam" designation="Pro-Vice Chancellor" campus="VIT"/>
+                            </Grid>
+                            <Grid item xs={12} md={3}>
+                                <TeamCard imgSrc={ksn}  title="Dr. K. Sathiyanarayanan" designation="FRSC - Registrar" campus="VIT"/>
+                            </Grid>
+                            <Grid item xs={12} md={3}>
+                                <TeamCard imgSrc={spr}  title="Dr. Sandhya Pentareddy " designation="Executive Director" campus="VIT"/>
                             </Grid>
                         </Grid>
                     </div>
@@ -99,21 +107,21 @@ class Team extends React.Component {
                         <h1 className="under">Co-Convenor</h1><br />
                         <Grid container spacing={24}>
                             <Grid item xs={12} md={3}>
-                                <TeamCard imgSrc={ram} title="Prof. Ramesh N" designation="Co-convenor" />
+                                <TeamCard imgSrc={ram} title="Prof. Ramesh N" designation="Co-Convenor" />
                             </Grid>
                             <Grid item xs={12} md={3}>
-                                <TeamCard imgSrc={sharmila} title="Prof. Sharmila N." designation="Co-convenor"/>
+                                <TeamCard imgSrc={sharmila} title="Prof. Sharmila N." designation="Co-Convenor"/>
                             </Grid>
                             <Grid item xs={12} md={3}>
-                                <TeamCard imgSrc={psm} title="Prof. SenthilKumar M" designation="Co-convenor" />
+                                <TeamCard imgSrc={psm} title="Prof. SenthilKumar M" designation="Co-Convenor" />
                             </Grid>
                             <Grid item xs={12} md={3}>
-                                <TeamCard imgSrc={pscv} title="Prof. Sudeer C.V" designation="Co-convenor"/>
+                                <TeamCard imgSrc={pscv} title="Prof. Sudeer C.V" designation="Co-Convenor"/>
                             </Grid>
                         </Grid>
                         <Grid container spacing={24}>
                             <Grid item xs={12} md={12}>
-                                <TeamCard imgSrc={seeni} title="Prof. Seenivasan R" designation="Co-convenor"/>
+                                <TeamCard imgSrc={seeni} title="Prof. Seenivasan R" designation="Co-Convenor"/>
                             </Grid>
                         </Grid>
                     </div>

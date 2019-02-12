@@ -21,6 +21,7 @@ import Marry from '../../images/marrybrown.png';
 import Zebronics from '../../images/zebronics.png';
 import Studio11 from '../../images/studio11.jpg';
 import EducationTree from '../../images/educationTree.png';
+import Caes from '../../images/caes.png';
 import './styles/sponsors.css';
 
 const Sponsors = () => {
@@ -80,6 +81,13 @@ const Sponsors = () => {
 					<Grid item md={3} xs={12} className="other-spn">
 						<img src={Studio11} style={{width: '33%'}} alt="pepsi" className="other-logo" />
 						<p>Styling Partner</p>
+					</Grid>
+				</Grid>
+				<br/>
+				<Grid container className="center-logo">
+					<Grid item md={4} xs={12} className="other-spn">
+						<img src={Caes} alt="pepsi" className="other-logo" />
+						<p>Study Abroad Partner</p>
 					</Grid>
 				</Grid>
 				<br />

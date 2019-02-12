@@ -40,6 +40,10 @@
     margin-top: 3em;
 }
 
+.center-logo{
+    justify-content: center;
+}
+
 @media only screen and (max-width: 800px){
     .co-logo {
         width: 50%;
