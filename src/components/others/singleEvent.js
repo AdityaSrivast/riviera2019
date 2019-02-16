@@ -60,14 +60,19 @@ class SingleEvent extends Component{
                                     <ul style={{listStyleType: 'none'}} className="single-event-list">
                                         <li>
                                             <div className="register-btn">
-                                                <Button style={{width: '80%'}} component={Link} to="https://vtop11.vit.ac.in/riviera/" size="large" variant="contained">
-                                                    REGISTER
-                                                </Button>
+                                                <a style={{textDecoration: 'none'}} href="https://vtop11.vit.ac.in/riviera/">
+                                                    <Button style={{width: '80%'}} size="large" variant="contained">
+                                                        REGISTER
+                                                    </Button>
+                                                </a>
                                             </div>
                                         </li>
                                         <li className="single-event-li">
                                             <p>Reg. Fees</p>
-                                            <p>{event.fees}</p>
+                                            <p>
+                                                <FontAwesome name="inr" />
+                                                {event.fees}
+                                            </p>
                                         </li>
                                         <li className="single-event-li">
                                             <p>Date</p>

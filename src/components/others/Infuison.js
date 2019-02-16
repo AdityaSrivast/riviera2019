@@ -1,10 +1,16 @@
 import React, { Component } from 'react';
 import Slider from "react-slick";
+import { Grid } from '@material-ui/core';
 
 import Header from './common/header';
 import Menu from "../Menu";
 import SmallFooter from './common/smallFooter';
 
+import Haldiram from '../../images/haldiram.png';
+import Inf1 from '../../images/infs-1.png';
+import Inf2 from '../../images/infs2.png';
+import Portico from '../../images/portico.png';
+import WT from '../../images/wt.png';
 import './styles/infusion.css';
 
 class Infusion extends Component {
@@ -99,6 +105,26 @@ class Infusion extends Component {
                         Videsh.
                         </p>
                     <br /><br />
+                    <h1 className="under">Sponsors</h1>
+                    <Grid container spacing={24}>
+                        <Grid item md={12} xs={12} className="center-sponsor" >
+                            <img src={Haldiram} alt="sponsor" />
+                        </Grid>
+                        <Grid item md={3} xs={12} className="center-sponsor">
+                            <img src={Inf1} alt="sponsor" className="other-logo"/>
+                        </Grid>
+                        <Grid item md={3} xs={12} className="center-sponsor">
+                            <img src={Inf2} alt="sponsor" className="other-logo" />
+                        </Grid>
+                        <Grid item md={3} xs={12} className="center-sponsor">
+                            <img src={WT} alt="sponsor" className="other-logo" />
+                        </Grid>
+                        <Grid item md={3} xs={12} className="center-sponsor">
+                            <img src={Portico} alt="sponsor" />
+                        </Grid>
+                    </Grid>
+                    <br />
+                    <br />
                     <h2 className="under">Contact Details </h2>
                     <p>
                         <p>Apoorv Lunawat - +919033629119</p>

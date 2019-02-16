@@ -11,6 +11,11 @@
     height: 350px;
 }
 
+.center-sponsor{
+    display: flex;
+    justify-content: center;
+}
+
 .infusion-slider .slick-active{
     /* width: 100% !important; */
 }
@@ -24,5 +29,9 @@
 @media only screen and (max-width: 700){
     .hide-on-small{
         display: none !important;
+    }
+
+    .center-sponsor img{
+        width: 10% !important;
     }
 }
