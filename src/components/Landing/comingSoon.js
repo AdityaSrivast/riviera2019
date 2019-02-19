@@ -66,7 +66,7 @@ class ComingSoon extends Component {
                             </a>
                         </div>
                         <br />
-                        {/* <div className="countdown">
+                        <div className="countdown">
                             <div className='tiles'>{renderHTML(this.state.countdown)}</div>
                             <div class="labels">
                                 <li>Days</li>
@@ -74,7 +74,7 @@ class ComingSoon extends Component {
                                 <li>Mins</li>
                                 <li className="hide-in-phone">Secs</li>
                             </div>
-                        </div> */}
+                        </div>
                     </div>
                 </div>
             </div>

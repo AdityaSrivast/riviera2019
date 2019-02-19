@@ -60,7 +60,7 @@ class Landing extends Component {
                         <span className="landing-date">14th-17th FEBRUARY</span>
                     </div>
                     
-                    <div>
+                    {/* <div>
                         <div className="countdown">
                             <div className="coming-in">Coming In</div>
                             <div className='tiles'>{renderHTML(this.state.countdown)}</div>
@@ -71,7 +71,7 @@ class Landing extends Component {
                                 <li className="hide-in-phone">Secs</li>
                             </div>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         );
