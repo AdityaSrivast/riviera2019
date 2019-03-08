@@ -24,6 +24,17 @@ import EducationTree from '../../images/educationTree.png';
 import Caes from '../../images/caes.png';
 import Pvr from '../../images/pvr.png';
 import SafeExpress from '../../images/safe.png';
+import BBQ from '../../images/BBQ.png';
+import CUB from '../../images/CUB.png';
+import Cognizant from '../../images/Cognizant.png';
+import DLF from '../../images/DLF.png';
+import Ethnus from "../../images/Ehtnus.png";
+import Face from '../../images/FACE.png';
+import HDFC from '../../images/HDFC.png';
+import ITC from '../../images/ITC_Fortune.png';
+import Smart from '../../images/Smart.png'
+import IndianBank from '../../images/IndianBank.png';
+
 import './styles/sponsors.css';
 
 const Sponsors = () => {
@@ -37,12 +48,6 @@ const Sponsors = () => {
 					<Grid item md={12} xs={12} className="">
 						<p className="title-sponsor">Title Sponsor</p>
 						<img src={Pepsi} alt="pepsi" className="pepsi-logo" />
-					</Grid>
-				</Grid>
-				<Grid container>
-					<Grid item md={12} xs={12} className="">
-						<p className="title-sponsor">Co-Sponsor</p>
-						<img src={Paytm} alt="pepsi" className="co-logo" />
 					</Grid>
 				</Grid>
 				<br />
@@ -67,6 +72,43 @@ const Sponsors = () => {
 					</Grid>
 				</Grid>
 				<br />
+				<Grid container className="center-logo">
+					<Grid item md={3} xs={12} className="other-spn">
+						<img src={HDFC} alt="HDFC" className="other-logo" />
+						<p>Banking Partner</p>
+					</Grid>
+					<Grid item md={3} xs={12} className="other-spn">
+						<img src={IndianBank} alt="Indian Bank" className="other-logo" />
+						<p>Banking Partner</p>
+					</Grid>
+					<Grid item md={3} xs={12} className="other-spn">
+						<img src={CUB} alt="CUB" className="other-logo" />
+						<p>Banking Partner</p>
+					</Grid>
+					<Grid item md={3} xs={12} className="other-spn">
+						<img src={ITC} alt="HDFC" className="other-logo" />
+						<p>Hospitality Partner</p>
+					</Grid>
+				</Grid>
+				<br />
+				<Grid container className="center-logo">
+					<Grid item md={3} xs={12} className="other-spn">
+						<img src={Face} alt="HDFC" className="other-logo" />
+						<p>Education Partner</p>
+					</Grid>
+					<Grid item md={3} xs={12} className="other-spn">
+						<img src={Smart} alt="Indian Bank" className="other-logo" />
+						<p>Education Partner</p>
+					</Grid>
+					<Grid item md={3} xs={12} className="other-spn">
+						<img src={Ethnus} alt="CUB" className="other-logo" />
+						<p>Education Partner</p>
+					</Grid>
+					<Grid item md={3} xs={12} className="other-spn">
+						<img src={Cognizant} alt="HDFC" className="other-logo" />
+						<p>Cultural Partner</p>
+					</Grid>
+				</Grid>
 				<Grid container>
 					<Grid item md={3} xs={12} className="other-spn">
 						<img src={Mercedes} alt="pepsi" className="other-logo" />
@@ -98,6 +140,16 @@ const Sponsors = () => {
 					<Grid item md={3} xs={12} className="other-spn">
 						<img src={SafeExpress} alt="pepsi" className="other-logo" />
 						<p>Logitstics Partner</p>
+					</Grid>
+					<Grid item md={3} xs={12} className="other-spn">
+						<img src={DLF} alt="CUB" className="other-logo" />
+					</Grid>
+					<Grid item md={3} xs={12} className="other-spn">
+						<img src={BBQ} alt="HDFC" className="other-logo" />
+					</Grid>
+					<Grid item md={3} xs={12} className="other-spn">
+						<img src={Paytm} alt="pepsi" className="other-logo" />
+						<p>Payment Partner</p>
 					</Grid>
 				</Grid>
 				<br />
